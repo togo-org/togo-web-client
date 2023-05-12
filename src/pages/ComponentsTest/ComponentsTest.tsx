@@ -1,11 +1,14 @@
+import close from '@/assets/icons/Close.svg';
 import Button from '@/shared/Button';
 import Chip from '@/shared/Chip';
+import Icon from '@/shared/Icon';
 import { Box, Button as MuiButton, Typography, useTheme } from '@mui/material';
 
 const ComponentsTest = () => {
 	const theme = useTheme();
 	return (
 		<Box>
+
 			<Typography
 				variant='h1'
 				sx={{
@@ -69,6 +72,8 @@ const ComponentsTest = () => {
 				</Typography>
 				<Chip label='אוכל טעים רצח' />
 			</Box>
+
+        	<Icon src={close} size='xl' alt='close'/>
 		</Box>
 	);
 };
