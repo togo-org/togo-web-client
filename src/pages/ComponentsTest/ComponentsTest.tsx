@@ -1,8 +1,8 @@
-import close from '@/assets/icons/close.svg';
 import Button from '@/shared/Button';
 import Chip from '@/shared/Chip';
 import Icon from '@/shared/Icon';
 import { Box, Typography, useTheme } from '@mui/material';
+import close from '@/assets/icons/close.svg';
 
 const ComponentsTest = () => {
 	const theme = useTheme();
