@@ -5,8 +5,8 @@ import Image from 'next/image';
 
 const Icon = ({ src, size, alt }: IconProps) => {
 	const styles = useStyles();
-	function getSizeStyles(size: IconSize) {
-		switch (size) {
+	function getSizeStyles(iconSize: IconSize) {
+		switch (iconSize) {
 			case 'xl': {
 				return styles.size.xl;
 			}
@@ -21,6 +21,9 @@ const Icon = ({ src, size, alt }: IconProps) => {
 			}
 			case 'xs': {
 				return styles.size.xs;
+			}
+			default: {
+				return styles.size.m;
 			}
 		}
 	}

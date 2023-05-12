@@ -1,8 +1,8 @@
+import close from '@/assets/icons/close.svg';
 import Button from '@/shared/Button';
 import Chip from '@/shared/Chip';
 import Icon from '@/shared/Icon';
 import { Box, Typography, useTheme } from '@mui/material';
-import Close from '../../assets/icons/close.svg';
 
 const ComponentsTest = () => {
 	const theme = useTheme();
@@ -72,7 +72,7 @@ const ComponentsTest = () => {
 				<Chip label='אוכל טעים רצח' />
 			</Box>
 
-			<Icon src={Close} size='xl' alt='close' />
+			<Icon src={close} size='xl' alt='close' />
 		</Box>
 	);
 };
