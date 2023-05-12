@@ -1,4 +1,4 @@
-import close from '@/assets/icons/Close.svg';
+import close from '@/assets/icons/close.svg';
 import Button from '@/shared/Button';
 import Chip from '@/shared/Chip';
 import Icon from '@/shared/Icon';
