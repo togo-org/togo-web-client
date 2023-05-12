@@ -15,6 +15,7 @@ function App(props: AppProps) {
 			<Box>
 				<Box component='main'>
 					<Component {...pageProps} />
+					
 				</Box>
 			</Box>
 		</ThemeProvider>
