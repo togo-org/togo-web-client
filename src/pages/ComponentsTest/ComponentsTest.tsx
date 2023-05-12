@@ -1,4 +1,4 @@
-import close from '@/assets/icons/close.svg';
+import Close from '@/assets/icons/close.svg';
 import Button from '@/shared/Button';
 import Chip from '@/shared/Chip';
 import Icon from '@/shared/Icon';
@@ -72,7 +72,7 @@ const ComponentsTest = () => {
 				<Chip label='אוכל טעים רצח' />
 			</Box>
 
-			<Icon src={close} size='xl' alt='close' />
+			<Icon src={Close} size='xl' alt='close' />
 		</Box>
 	);
 };
