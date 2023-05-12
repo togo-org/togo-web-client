@@ -47,8 +47,7 @@ const lightTheme = createTheme({
 		background: {
 			paper: '#ffffff',
 			default: '#ffffff',
-		}
-		
+		},
 	},
 });
 

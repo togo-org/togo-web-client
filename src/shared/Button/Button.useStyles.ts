@@ -1,20 +1,71 @@
+import { ButtonOptionsInterface } from '@/shared/Button/Button.types';
 import { useTheme } from '@mui/material';
 
-const useStyles = () => {
+const useStyles = ({ variant, size, color }: ButtonOptionsInterface) => {
 	const theme = useTheme();
 
-	return {
-		root: {
-			color: theme.palette.primary.contrastText,
-			backgroundColor: theme.palette.primary.main,
-			'&:hover': {
-				backgroundColor: theme.palette.primary.dark,
-			},
-		},
-
+	const styles = {
 		typography: {
 			color: theme.palette.primary.contrastText,
 		},
+
+		color: {
+			primary: {
+				color: theme.palette.primary.contrastText,
+				backgroundColor: theme.palette.primary.main,
+				borderColor: theme.palette.primary.main,
+			},
+			secondary: {
+				color: theme.palette.secondary.contrastText,
+				backgroundColor: theme.palette.secondary.main,
+				borderColor: theme.palette.secondary.main,
+			},
+		},
+
+		variant: {
+			text: {
+				border: 'none',
+				backgroundColor: 'transparent',
+			},
+			outlined: {
+				borderStyle: 'solid',
+				borderWidth: '2px',
+				backgroundColor: 'transparent',
+			},
+			contained: {
+				border: 'none',
+			},
+		},
+
+		size: {
+			small: {
+				padding: '0.5rem 1rem',
+				fontSize: '0.875rem',
+			},
+			medium: {
+				padding: '0.75rem 1.5rem',
+				fontSize: '1rem',
+			},
+			large: {
+				padding: '1rem 2rem',
+				fontSize: '1.125rem',
+			},
+		},
+	};
+
+	const getRootStyles = () => {
+		const rootStyles = {
+			...styles.color[color],
+			...styles.variant[variant],
+			...styles.size[size],
+		};
+
+		return rootStyles;
+	};
+
+	return {
+		root: getRootStyles(),
+		typography: styles.typography,
 	};
 };
 

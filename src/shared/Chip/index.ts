@@ -1,11 +1,4 @@
 import Chip from '@/shared/Chip/Chip';
-import ChipProps from './Chip.types';
-
-
-
-
-
-
 
 
 
