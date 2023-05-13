@@ -1,18 +1,23 @@
 import { themeState } from '@/store';
 import { getDesignTokens } from '@/utils/helpers';
-import { Box, CssBaseline } from '@mui/material';
+import { Box, CssBaseline, useTheme } from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { AppProps } from 'next/app';
 import { useRecoilValue } from 'recoil';
 
 function App(props: AppProps) {
 	const { Component, pageProps } = props;
-	const theme = useRecoilValue(themeState);
+	const themeName = useRecoilValue(themeState);
+	const theme = useTheme();
 
 	return (
-		<ThemeProvider theme={createTheme(getDesignTokens(theme))}>
+		<ThemeProvider theme={createTheme(getDesignTokens(themeName))}>
 			<CssBaseline />
-			<Box>
+			<Box
+				sx={{
+					backgroundColor: theme.palette.background.default,
+				}}
+			>
 				<Box component='main'>
 					<Component {...pageProps} />
 				</Box>

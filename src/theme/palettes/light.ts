@@ -1,6 +1,15 @@
 import { createTheme } from '@mui/material/styles';
 
 const lightTheme = createTheme({
+	components: {
+		MuiCssBaseline: {
+			styleOverrides: {
+				body: {
+					backgroundColor: '#ffffff',
+				},
+			},
+		},
+	},
 	palette: {
 		primary: {
 			main: '#856FBD',
