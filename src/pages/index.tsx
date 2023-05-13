@@ -1,13 +1,8 @@
-import ComponentsTest from '@/pages/ComponentsTest';
-import { Box } from '@mui/material';
+import HomePage from '@/pages/HomePage';
 import { NextPage } from 'next';
 
 const Home: NextPage = () => {
-	return (
-		<Box>
-			<ComponentsTest />
-		</Box>
-	);
+	return <HomePage />;
 };
 
 export default Home;
