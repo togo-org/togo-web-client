@@ -1,7 +1,12 @@
-import ComponentSectionProps from '@/pages/ComponentsTest/ComponentSection/ComponentSection.types';
 import useStyles from '@/pages/ComponentsTest/ComponentSection/ComponentSection.useStyles';
 import { Box, Typography } from '@mui/material';
 import React from 'react';
+
+interface ComponentSectionProps {
+	title: string;
+	description: string;
+	componentsCountainer: React.ReactNode;
+}
 
 const ComponentSection = ({
 	title,
