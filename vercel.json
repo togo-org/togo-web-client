@@ -1,5 +1,3 @@
 {
-	"builds": {
-		"optimize": false
-	}
+	"builds": [{ "src": "src/**/*", "use": "@vercel/static-build" }]
 }
