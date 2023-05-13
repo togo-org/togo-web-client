@@ -1,8 +1,12 @@
-import IconPresentationProps from '@/pages/ComponentsTest/sections/IconsSection/IconPresentation/IconPresentation.types';
 import useStyles from '@/pages/ComponentsTest/sections/IconsSection/IconPresentation/IconPresentation.useStyles';
 import Icon from '@/shared/Icon';
 import { Box, Typography } from '@mui/material';
 import React from 'react';
+
+interface IconPresentationProps {
+	icon: string;
+	name: string;
+}
 
 const IconPresentation = ({ icon, name }: IconPresentationProps) => {
 	const styles = useStyles();
