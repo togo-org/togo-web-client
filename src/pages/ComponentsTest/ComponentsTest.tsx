@@ -72,7 +72,7 @@ const ComponentsTest = () => {
 				<Chip label='אוכל טעים רצח' />
 			</Box>
 
-			<Icon src={ICONS.ArrowBack} size='xl' alt='arrow back' />
+			<Icon src={ICONS.ArrowForward} size='xl' alt='arrow back' />
 		</Box>
 	);
 };
