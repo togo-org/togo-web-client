@@ -1,7 +1,7 @@
-import close from '@/assets/icons/vector.svg'; // knife-and-fork
 import Button from '@/shared/Button';
 import Chip from '@/shared/Chip';
 import Icon from '@/shared/Icon';
+import ICONS from '@/utils/constants/ICONS';
 import { Box, Typography, useTheme } from '@mui/material';
 
 const ComponentsTest = () => {
@@ -72,7 +72,7 @@ const ComponentsTest = () => {
 				<Chip label='אוכל טעים רצח' />
 			</Box>
 
-			<Icon src={close} size='xl' alt='close' />
+			<Icon src={ICONS.ArrowBack} size='xl' alt='arrow back' />
 		</Box>
 	);
 };
