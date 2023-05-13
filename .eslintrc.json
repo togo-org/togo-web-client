@@ -31,12 +31,6 @@
 				"tsx": "never"
 			}
 		],
-		"import/no-unresolved": [
-			"error",
-			{
-				"ignore": [".svg$"]
-			}
-		],
 		"import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
 
 		//  react
