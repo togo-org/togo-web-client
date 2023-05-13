@@ -1,4 +1,4 @@
-import ComponentSection from '@/pages/ComponentsTest/ComponentSection/ComponentSection';
+import ComponentSection from '@/pages/ComponentsTest/ComponentSection';
 import Header from '@/pages/ComponentsTest/Header';
 import PageContainer from '@/pages/ComponentsTest/PageContainer';
 import ButtonsSection from '@/pages/ComponentsTest/sections/ButtonsSection';
