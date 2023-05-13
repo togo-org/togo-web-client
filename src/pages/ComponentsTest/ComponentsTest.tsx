@@ -4,6 +4,7 @@ import PageContainer from '@/pages/ComponentsTest/PageContainer';
 import ButtonsSection from '@/pages/ComponentsTest/sections/ButtonsSection';
 import ChipsSection from '@/pages/ComponentsTest/sections/ChipsSection';
 import IconsSection from '@/pages/ComponentsTest/sections/IconsSection';
+import React from 'react';
 
 const ComponentsTest = () => {
 	return (

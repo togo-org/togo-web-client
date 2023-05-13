@@ -1,5 +1,6 @@
 import Button from '@/shared/Button';
 import { Box } from '@mui/material';
+import React from 'react';
 
 const ButtonsSection = () => {
 	return (

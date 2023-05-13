@@ -2,6 +2,7 @@ import IconPresentation from '@/pages/ComponentsTest/sections/IconsSection/IconP
 import useStyles from '@/pages/ComponentsTest/sections/IconsSection/IconsSection.useStyles';
 import ICONS from '@/utils/constants/ICONS';
 import { Box } from '@mui/material';
+import React from 'react';
 
 const IconsSection = () => {
 	const styles = useStyles();
