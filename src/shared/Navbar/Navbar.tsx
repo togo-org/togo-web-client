@@ -1,24 +1,11 @@
-import { Box, Typography } from '@mui/material';
-import Link from 'next/link';
+import NavLink from '@/shared/Navbar/NavLink';
+import { Box } from '@mui/material';
 
 const Navbar = () => {
 	return (
 		<Box component='nav'>
-			<Link href='/'>
-				<Typography component='p' variant='body1'>
-					Home
-				</Typography>
-			</Link>
-			<Link href='/ComponentsTest'>
-				<Typography component='p' variant='body1'>
-					ComponentsTest
-				</Typography>
-			</Link>
-			<Link href='/HomePage'>
-				<Typography component='p' variant='body1'>
-					HomePage
-				</Typography>
-			</Link>
+			<NavLink href='/' label='Home' />
+			<NavLink href='/ComponentsTest' label='Components Test' />
 		</Box>
 	);
 };
