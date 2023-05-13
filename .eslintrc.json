@@ -13,7 +13,7 @@
 				"alwaysTryTypes": true
 			}
 		},
-		"import/ignore": ["@fontsource/rubik", "\\.(svg)$"]
+		"import/ignore": ["@fontsource/rubik"]
 	},
 	"rules": {
 		//prettier
