@@ -12,18 +12,18 @@ const ComponentsTest = () => {
 			<ComponentSection
 				title='Buttons'
 				description='All the buttons in the app with all the states and variations'
-				component={<ButtonsSection />}
+				componentsCountainer={<ButtonsSection />}
 			/>
 			<ComponentSection
 				title='Chips'
 				description='All the chips in the app with all the states and variations'
-				component={<ChipsSection />}
+				componentsCountainer={<ChipsSection />}
 			/>
 
 			<ComponentSection
 				title='Icons'
 				description='All the icons in the app with all the states and variations'
-				component={<IconsSection />}
+				componentsCountainer={<IconsSection />}
 			/>
 		</PageContainer>
 	);

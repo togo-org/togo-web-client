@@ -5,7 +5,7 @@ import { Box, Typography } from '@mui/material';
 const ComponentSection = ({
 	title,
 	description,
-	component,
+	componentsCountainer,
 }: ComponentSectionProps) => {
 	const styels = useStyles();
 	return (
@@ -16,7 +16,7 @@ const ComponentSection = ({
 			<Typography variant='body1' sx={styels.description}>
 				{description}
 			</Typography>
-			<Box sx={styels.components}>{component}</Box>
+			<Box sx={styels.components}>{componentsCountainer}</Box>
 		</Box>
 	);
 };

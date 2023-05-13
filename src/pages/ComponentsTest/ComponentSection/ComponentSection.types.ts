@@ -3,7 +3,7 @@ import React from 'react';
 interface ComponentSectionProps {
 	title: string;
 	description: string;
-	component: React.ReactNode;
+	componentsCountainer: React.ReactNode;
 }
 
 export default ComponentSectionProps;
