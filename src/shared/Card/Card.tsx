@@ -13,11 +13,18 @@ const Card = ({ src, alt }: CardProps) => {
         <Chip label='אוכל אסייאתי' />
         <Chip label='סושי' />
       </Box>
-      <Box sx={styles.cardFooter}>
+      <Box sx={styles.cardFooterHead}>
         <Typography variant='h6' sx={styles.h2}>
           זוזוברה
         </Typography>
-        <Box sx={styles.cardFooter} />
+      </Box>
+      <Box sx={styles.cardFooterBody}>
+      <Typography component='p' sx={styles.pBold}>
+          1.2 ק״מ
+        </Typography>
+        <Typography component='p' sx={styles.p}>
+            אריה שנקר 6 הרצליה
+        </Typography>
       </Box>
     </MuiCard>
   );
