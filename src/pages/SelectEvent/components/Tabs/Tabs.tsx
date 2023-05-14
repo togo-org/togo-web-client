@@ -1,6 +1,6 @@
 import useStyles from '@/pages/SelectEvent/components/Tabs/Tabs.useStyles';
-import { SELECT_EVENT_TABS } from '@/pages/SelectEvent/utils';
 import Button from '@/shared/Button';
+import SELECT_EVENT_TABS from '@/utils/constants/SELECT_EVENT_TABS';
 import { Box } from '@mui/material';
 import { Dispatch, SetStateAction } from 'react';
 

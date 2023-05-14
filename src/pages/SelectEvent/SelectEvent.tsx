@@ -3,8 +3,8 @@ import What from '@/pages/SelectEvent/What';
 import When from '@/pages/SelectEvent/When';
 import ContentContainer from '@/pages/SelectEvent/components/ContentContainer';
 import Tabs from '@/pages/SelectEvent/components/Tabs';
-import { SELECT_EVENT_TABS } from '@/pages/SelectEvent/utils';
 import BgImage from '@/shared/BgImage';
+import SELECT_EVENT_TABS from '@/utils/constants/SELECT_EVENT_TABS';
 import { Box } from '@mui/material';
 import { useState } from 'react';
 
