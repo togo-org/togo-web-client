@@ -1,7 +1,7 @@
 import { ButtonOptionsInterface } from '@/shared/Button/Button.types';
 import { useTheme } from '@mui/material';
 
-const useStyles = ({ variant, size, color }: ButtonOptionsInterface) => {
+const useStyles = ({ variant, size, color, shape }: ButtonOptionsInterface) => {
 	const theme = useTheme();
 
 	const styles = {
@@ -55,6 +55,18 @@ const useStyles = ({ variant, size, color }: ButtonOptionsInterface) => {
 				fontSize: '1.125rem',
 			},
 		},
+
+		shape: {
+			circle: {
+				borderRadius: '50%',
+			},
+			pill: {
+				borderRadius: '100px',
+			},
+			default: {
+				borderRadius: '4px',
+			},
+		},
 	};
 
 	const getRootStyles = () => {
@@ -62,6 +74,7 @@ const useStyles = ({ variant, size, color }: ButtonOptionsInterface) => {
 			...styles.color[color],
 			...styles.variant[variant],
 			...styles.size[size],
+			...styles.shape[shape],
 		};
 
 		return rootStyles;
