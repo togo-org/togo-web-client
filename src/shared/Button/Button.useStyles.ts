@@ -9,6 +9,10 @@ const useStyles = ({ variant, size, color }: ButtonOptionsInterface) => {
 			color: theme.palette.primary.contrastText,
 		},
 
+		width: {
+			width: 'fit-content',
+		},
+
 		color: {
 			primary: {
 				color: theme.palette.primary.contrastText,
@@ -66,6 +70,7 @@ const useStyles = ({ variant, size, color }: ButtonOptionsInterface) => {
 	return {
 		root: getRootStyles(),
 		typography: styles.typography,
+		width: styles.width,
 	};
 };
 
