@@ -1,7 +1,9 @@
 import colors from '@/theme/colors';
 import '@fontsource/rubik';
+import { useTheme } from '@mui/material';
 
 const useStyles = () => {
+  const theme = useTheme();
   return {
     root: {
       display: 'flex',
@@ -26,15 +28,27 @@ const useStyles = () => {
       color: colors.grey.black,
       fontWeight: 'bold',
       width: 'fit-content',
-      border: '2px solid red',
+
+      fontSize: '1.125rem',
     },
-    cardFooter: {
+    cardFooterHead: {
       display: 'flex',
       justifyContent: 'flex-end',
-      border: '1px solid red',
     },
-    cardTextContainer: {
+    cardFooterBody: {
       display: 'flex',
+      flexDirection: 'row-reverse',
+      justifyContent: 'flex-start',
+    },
+    pBold: {
+      color: theme.palette.primary.main,
+      fontWeight: 'bold',
+      fontSize: '0.87rem',
+    },
+    p: {
+      fontSize: '0.87rem',
+      fontWeight: 'bold',
+      marginRight: '20px',
     },
   };
 };
