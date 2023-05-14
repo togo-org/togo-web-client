@@ -1,4 +1,5 @@
-import BgImage from '@/pages/Splash/BgImage';
+import BgImage from '@/pages/Splash/components/BgImage';
+import Title from '@/pages/Splash/components/Title';
 import Button from '@/shared/Button';
 import { Box, Typography } from '@mui/material';
 
@@ -8,42 +9,29 @@ const Splash = () => {
 			<Box
 				sx={{
 					position: 'absolute',
-					border: '4px solid red',
 					top: '33%',
 					left: '50%',
 					transform: 'translate(-50%, -50%)',
+					display: 'flex',
+					flexDirection: 'column',
+					alignItems: 'center',
 				}}
 			>
-				<Typography
-					variant='h1'
-					sx={{
-						position: 'relative',
-						background: 'transparent',
-						border: '1px solid black',
-						color: 'white',
-						textAlign: 'center',
-						fontSize: '5rem',
-						fontWeight: 'bold',
-						fontFamily: 'sans-serif',
-						letterSpacing: '0.5rem',
-						padding: '1rem',
-						zIndex: 1,
-					}}
-				>
-					טוגו
-				</Typography>
+				<Title />
+
 				<Typography variant='subtitle1'>פשוט לצאת</Typography>
 			</Box>
 			<Box
 				sx={{
 					position: 'absolute',
-					border: '4px solid red',
 					top: '66%',
 					left: '50%',
 					transform: 'translate(-50%, -50%)',
 					display: 'flex',
 					flexDirection: 'column',
 					gap: '10px',
+					width: '100%',
+					alignItems: 'center',
 				}}
 			>
 				<Button label='התחברות באמצעות גוגל' />
