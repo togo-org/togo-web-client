@@ -10,6 +10,9 @@ const useStyles = () => {
 			fontSize: '0.75rem',
 			borderRadius: '6px',
 			border: `2px solid ${colors.grey.grey2}`,
+			width: 'fit-content',
+			height: 'fit-content',
+
 		},
 	};
 };
