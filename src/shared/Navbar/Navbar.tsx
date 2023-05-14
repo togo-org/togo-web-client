@@ -14,6 +14,7 @@ const Navbar = () => {
       <NavLink href='/ComponentsTest' label='Components Test' />
       <NavLink href='/Splash' label='Splash' />
       <NavLink href='/SelectEvent' label='Select Event' />
+      <NavLink href='/HamburgerPage' label='Hamburger' />
     </Box>
   );
 };
