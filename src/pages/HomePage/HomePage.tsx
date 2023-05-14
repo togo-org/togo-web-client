@@ -1,12 +1,7 @@
-import Button from '@/shared/Button';
 import { Box } from '@mui/material';
 
 const HomePage = () => {
-	return (
-		<Box>
-			<Button label='Click' />
-		</Box>
-	);
+	return <Box>Home Page</Box>;
 };
 
 export default HomePage;

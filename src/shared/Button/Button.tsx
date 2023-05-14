@@ -11,7 +11,7 @@ const Button = ({
 	const styles = useStyles({ variant, color, size });
 
 	return (
-		<MuiButton sx={styles.root}>
+		<MuiButton sx={{ ...styles.root, ...styles.width }}>
 			<Typography sx={styles.typography}>{label}</Typography>
 		</MuiButton>
 	);

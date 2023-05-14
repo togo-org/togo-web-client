@@ -3,7 +3,12 @@ import { Head, Html, Main, NextScript } from 'next/document';
 
 function Document() {
 	return (
-		<Html lang='en'>
+		<Html
+			lang='en'
+			style={{
+				height: '100%',
+			}}
+		>
 			<Head>
 				<link rel='preconnect' href='https://fonts.googleapis.com' />
 				<link rel='preconnect' href='https://fonts.gstatic.com' />
