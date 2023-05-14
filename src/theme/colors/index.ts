@@ -1,4 +1,7 @@
-import grey from "@/theme/colors/grey";
+import grey from '@/theme/colors/grey';
 
-export {grey}
+const colors = {
+	grey,
+};
 
+export default colors;
