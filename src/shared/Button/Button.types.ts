@@ -1,6 +1,7 @@
 type ButtonVariant = 'text' | 'outlined' | 'contained';
 type ButtonSize = 'small' | 'medium' | 'large';
 type ButtonColor = 'primary' | 'secondary';
+type ButtonShape = 'circle' | 'pill' | 'default';
 
 interface ButtonProps {
 	label: string;
@@ -8,12 +9,14 @@ interface ButtonProps {
 	variant?: ButtonVariant;
 	size?: ButtonSize;
 	color?: ButtonColor;
+	shape?: ButtonShape;
 }
 
 export interface ButtonOptionsInterface {
 	variant: ButtonVariant;
 	size: ButtonSize;
 	color: ButtonColor;
+	shape: ButtonShape;
 }
 
 export default ButtonProps;

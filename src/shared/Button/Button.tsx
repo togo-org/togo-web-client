@@ -7,8 +7,9 @@ const Button = ({
 	variant = 'contained',
 	color = 'primary',
 	size = 'medium',
+	shape = 'default',
 }: ButtonProps) => {
-	const styles = useStyles({ variant, color, size });
+	const styles = useStyles({ variant, color, size, shape });
 
 	return (
 		<MuiButton sx={{ ...styles.root, ...styles.width }}>

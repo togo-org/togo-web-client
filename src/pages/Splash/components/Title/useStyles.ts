@@ -1,12 +1,11 @@
-import { useTheme } from '@mui/material';
+import colors from '@/theme/colors';
 
 const useStyles = () => {
-	const theme = useTheme();
 	return {
 		root: {
 			position: 'relative',
 			background: 'transparent',
-			color: theme.palette.primary.main,
+			color: colors.grey.black,
 			textAlign: 'center',
 			fontSize: '5rem',
 			fontWeight: 'bold',

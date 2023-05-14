@@ -1,7 +1,8 @@
 import BgImage from '@/pages/Splash/components/BgImage';
+import SubTitle from '@/pages/Splash/components/SubTitle';
 import Title from '@/pages/Splash/components/Title';
 import Button from '@/shared/Button';
-import { Box, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 
 const Splash = () => {
 	return (
@@ -18,8 +19,7 @@ const Splash = () => {
 				}}
 			>
 				<Title />
-
-				<Typography variant='subtitle1'>פשוט לצאת</Typography>
+				<SubTitle />
 			</Box>
 			<Box
 				sx={{
@@ -34,8 +34,8 @@ const Splash = () => {
 					alignItems: 'center',
 				}}
 			>
-				<Button label='התחברות באמצעות גוגל' />
-				<Button label='התחברות באמצעות מייל' />
+				<Button label='התחברות באמצעות גוגל' shape='pill' />
+				<Button label='התחברות באמצעות מייל' shape='pill' />
 			</Box>
 
 			<BgImage />
