@@ -3,19 +3,20 @@ import useStyles from '@/shared/Button/Button.useStyles';
 import { Button as MuiButton, Typography } from '@mui/material';
 
 const Button = ({
-	label,
-	variant = 'contained',
-	color = 'primary',
-	size = 'medium',
-	shape = 'default',
+  label,
+  variant = 'contained',
+  color = 'primary',
+  size = 'medium',
+  shape = 'default',
+  onClick,
 }: ButtonProps) => {
-	const styles = useStyles({ variant, color, size, shape });
+  const styles = useStyles({ variant, color, size, shape });
 
-	return (
-		<MuiButton sx={{ ...styles.root, ...styles.width }}>
-			<Typography sx={styles.typography}>{label}</Typography>
-		</MuiButton>
-	);
+  return (
+    <MuiButton sx={{ ...styles.root, ...styles.width }} onClick={onClick}>
+      <Typography sx={styles.typography}>{label}</Typography>
+    </MuiButton>
+  );
 };
 
 export default Button;

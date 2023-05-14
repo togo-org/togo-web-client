@@ -6,12 +6,12 @@ import { RecoilRoot } from 'recoil';
 const App = dynamic(() => import('../App'), { ssr: false });
 
 const MyApp = (props: AppProps) => {
-	return (
-		<RecoilRoot>
-			<Navbar />
-			<App {...props} />
-		</RecoilRoot>
-	);
+  return (
+    <RecoilRoot>
+      <Navbar />
+      <App {...props} />
+    </RecoilRoot>
+  );
 };
 
 export default MyApp;
