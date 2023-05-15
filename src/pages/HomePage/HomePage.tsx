@@ -1,7 +1,12 @@
 import { Box } from '@mui/material';
+import ContentContainer from './components/ContentContainer';
 
 const HomePage = () => {
-	return <Box>Home Page</Box>;
+  return (
+    <ContentContainer>
+      <h1>mannn</h1>
+    </ContentContainer>
+  );
 };
 
 export default HomePage;

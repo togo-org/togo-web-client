@@ -28,7 +28,6 @@ const useStyles = () => {
       color: colors.grey.black,
       fontWeight: 'bold',
       width: 'fit-content',
-
       fontSize: '1.125rem',
     },
     cardFooterHead: {
