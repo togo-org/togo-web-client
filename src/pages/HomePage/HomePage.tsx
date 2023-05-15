@@ -1,10 +1,11 @@
 import { Box } from '@mui/material';
 import ContentContainer from './components/ContentContainer';
+import HomePageImageBg from './components/HomePageImageBg';
 
 const HomePage = () => {
   return (
     <ContentContainer>
-      <h1>mannn</h1>
+      <HomePageImageBg></HomePageImageBg>
     </ContentContainer>
   );
 };

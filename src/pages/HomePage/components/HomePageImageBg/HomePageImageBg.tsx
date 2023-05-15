@@ -1,10 +1,15 @@
-import { Box } from "@mui/material";
-import Image from "next/image";
+import { Box } from '@mui/material';
+import Image from 'next/image';
+import useStyles from './HomePageImageBg.useStyles';
+import HomePageBg from '@/assets/images/home-page-bg.png';
 
-interface HomePageImageBgProps {
-    img: React.ReactNode;
-  }
+const HomePageImageBg = () => {
+  const styles = useStyles();
+  return (
+    <Box sx={styles.root}>
+    
+    </Box>
+  );
+};
 
-
-
-const HomePageImageBg = ({img} : HomePageImageBgProps) => { }
+export default HomePageImageBg;
