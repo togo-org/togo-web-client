@@ -11,6 +11,7 @@ const HeaderContainer = ({ children }: HeaderContainerProps) => {
       sx={{
         position: 'relative',
         top: '20px',
+        flexGrow: 1,
       }}
     >
       {children}

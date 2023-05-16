@@ -5,7 +5,9 @@ const useStyles = () => {
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
+      justifyContent: 'center',
       width: '100%',
+      flexGrow: 1,
     },
   };
 };
