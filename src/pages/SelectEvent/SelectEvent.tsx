@@ -4,6 +4,7 @@ import When from '@/pages/SelectEvent/When';
 import ContentContainer from '@/pages/SelectEvent/components/ContentContainer';
 import Tabs from '@/pages/SelectEvent/components/Tabs';
 import BgImage from '@/shared/BgImage';
+import IMAGES from '@/utils/constants/IMAGES';
 import SELECT_EVENT_TABS from '@/utils/constants/SELECT_EVENT_TABS';
 import { Box } from '@mui/material';
 import { useState } from 'react';
@@ -19,7 +20,7 @@ const SelectEvent = () => {
         {selectedTab === SELECT_EVENT_TABS.HOW_MUCH && <HowMuch />}
         {selectedTab === SELECT_EVENT_TABS.WHEN && <When />}
       </ContentContainer>
-      <BgImage />
+      <BgImage src={IMAGES.BgImage} alt='Background Image' />
     </Box>
   );
 };
