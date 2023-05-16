@@ -10,7 +10,7 @@ const HeaderContainer = ({ children }: HeaderContainerProps) => {
     <Box
       sx={{
         position: 'relative',
-        top: '108px',
+        top: '20px',
       }}
     >
       {children}
