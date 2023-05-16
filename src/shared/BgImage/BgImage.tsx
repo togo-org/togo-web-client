@@ -1,4 +1,3 @@
-import IMAGES from '@/utils/constants/IMAGES';
 import Image, { StaticImageData } from 'next/image';
 
 interface BgImageProps {
