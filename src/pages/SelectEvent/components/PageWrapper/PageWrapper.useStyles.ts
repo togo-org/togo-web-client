@@ -2,10 +2,11 @@ const useStyles = () => {
   return {
     root: {
       display: 'flex',
-      flexDirection: 'row',
-      width: '100%',
+      flexDirection: 'column',
       alignItems: 'center',
-      justifyContent: 'center',
+      justifyContent: 'space-between',
+      width: '100%',
+      height: '100%',
     },
   };
 };
