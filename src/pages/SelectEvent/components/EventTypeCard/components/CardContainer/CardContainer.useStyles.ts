@@ -1,11 +1,14 @@
 const useStyles = () => {
   return {
     root: {
-      background: 'transparent',
+      width: '300px',
+      height: '156px',
+      borderRadius: '10px',
       display: 'flex',
       flexDirection: 'column',
+      justifyContent: 'center',
       alignItems: 'center',
-      width: '100%',
+      position: 'relative',
     },
   };
 };
