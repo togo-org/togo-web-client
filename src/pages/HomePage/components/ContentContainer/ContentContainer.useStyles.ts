@@ -5,8 +5,10 @@ const useStyles = () => {
       border: '1px solid red',
       display: 'flex',
       flexDirection: 'column',
-      alignItems: 'center',
-      width: '100%',
+      justifyContent: 'flex-start',
+      gap: '100px',
+      alignItems: 'left',
+      width: '100vh',
       height: '100%',
     },
   };
