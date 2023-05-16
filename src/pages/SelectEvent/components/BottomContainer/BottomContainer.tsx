@@ -6,7 +6,21 @@ interface BottomContainerProps {
 }
 
 const BottomContainer = ({ children }: BottomContainerProps) => {
-  return <Box>{children}</Box>;
+  return (
+    <Box
+      sx={{
+        flexGrow: 1,
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'flex-end',
+        alignItems: 'center',
+        width: '100%',
+        paddingBottom: '20px',
+      }}
+    >
+      {children}
+    </Box>
+  );
 };
 
 export default BottomContainer;
