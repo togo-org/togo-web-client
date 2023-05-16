@@ -1,13 +1,12 @@
 const useStyles = () => {
   return {
     root: {
-      background: 'transparent',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
-      justifyContent: 'center',
+      justifyContent: 'space-between',
       width: '100%',
-      flexGrow: 1,
+      height: '100%',
     },
   };
 };

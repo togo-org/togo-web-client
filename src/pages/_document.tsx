@@ -18,9 +18,21 @@ function Document() {
           rel='stylesheet'
         />
       </Head>
-      <body>
+      <body
+        style={{
+          minHeight: '100vh',
+        }}
+      >
         <Main />
         <NextScript />
+        <style>{`
+          #__next {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+          }
+        `}</style>
       </body>
     </Html>
   );
