@@ -4,11 +4,16 @@ import React from 'react';
 
 interface CardContainerProps {
   children: React.ReactNode;
+  onClick: () => void;
 }
 
-const CardContainer = ({ children }: CardContainerProps) => {
+const CardContainer = ({ children, onClick }: CardContainerProps) => {
   const styles = useStyles();
-  return <Card sx={styles.root}>{children}</Card>;
+  return (
+    <Card sx={styles.root} onClick={onClick}>
+      {children}
+    </Card>
+  );
 };
 
 export default CardContainer;
