@@ -7,6 +7,8 @@ const useStyles = ({ variant, size, color, shape }: ButtonOptionsInterface) => {
   const styles = {
     typography: {
       color: 'inherit',
+      fontSize: 'inherit',
+      fontWeight: 'inherit',
     },
 
     width: {
