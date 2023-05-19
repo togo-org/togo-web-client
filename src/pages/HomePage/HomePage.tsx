@@ -4,9 +4,9 @@ import ICONS from '@/utils/constants/ICONS';
 import Icon from '@/shared/Icon';
 import Card from '@/shared/Card';
 import FoodImg from '@/assets/images/preview-card.png';
-import TyphographyContainer from './components/TyphograpyContainer';
+import TyphographyContainer from '@/pages/HomePage/components/TyphograpyContainer';
 import Button from '@/shared/Button';
-import CardContainer from './components/CardContainer/CardContainer';
+import CardContainer from '@/pages/HomePage/components/CardContainer/CardContainer';
 
 const HomePage = () => {
   return (
