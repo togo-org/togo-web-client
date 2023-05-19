@@ -1,15 +1,15 @@
 const useStyles = () => {
   return {
     root: {
-      position: 'absolute',
+      position: 'relative',
       border: '1px solid red',
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'flex-start',
       gap: '100px',
       alignItems: 'left',
-      width: '100vh',
-      height: '100%',
+      width: '100vw',
+      height: '100vh',
     },
   };
 };

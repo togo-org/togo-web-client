@@ -1,6 +1,6 @@
 import useStyles from '@/pages/HomePage/components/ContentContainer/ContentContainer.useStyles';
 import { Box } from '@mui/material';
-import React from 'react';
+
 
 interface ContentContainerProps {
   children: React.ReactNode;

@@ -8,7 +8,9 @@ interface TyphographyContainerProps {
 
 const TyphographyContainer = ({children} : TyphographyContainerProps) => {
   const styles = useStyles();
-  return <Box sx={styles.root}>{children}</Box>;
+  return <Box sx={styles.root}>
+         {children}
+    </Box>;
 };
 
 export default TyphographyContainer;

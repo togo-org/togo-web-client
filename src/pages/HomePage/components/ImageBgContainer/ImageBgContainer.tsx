@@ -1,5 +1,4 @@
-import { Box, Card, Paper } from '@mui/material';
-import Image from 'next/image';
+import { Box } from '@mui/material';
 import useStyles from './ImageBgContainer.useStyles';
 
 interface ImageBgContainerProps {
