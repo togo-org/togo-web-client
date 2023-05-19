@@ -10,7 +10,7 @@ const BgImage = () => {
         height: '100%',
         width: '100%',
       }}
-    ></Image>
+    />
   );
 };
 

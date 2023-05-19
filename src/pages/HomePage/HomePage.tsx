@@ -1,5 +1,5 @@
 import { Typography, Select } from '@mui/material';
-import ContentContainer from './components/ContentContainer'
+import ContentContainer from '@/pages/HomePage/components/ContentContainer'
 import ICONS from '@/utils/constants/ICONS';
 import Icon from '@/shared/Icon';
 import Card from '@/shared/Card';
