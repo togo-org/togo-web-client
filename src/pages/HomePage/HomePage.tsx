@@ -14,10 +14,10 @@ const HomePage = () => {
       <TyphographyContainer>
         <Icon src={ICONS.Menu} size='xl' alt='alt' />
 
-        <Typography component={'h1'}>היי יניב</Typography>
-        <Typography component={'h1'}>היי יניב</Typography>
+        <Typography component='h1'>היי יניב</Typography>
+        <Typography component='h1'>היי יניב</Typography>
         <Button label='התחברות באמצעות גוגל' shape='pill' />
-        <Select></Select>
+        
       </TyphographyContainer>
       <CardContainer>
         <Card src={FoodImg} alt='food' />

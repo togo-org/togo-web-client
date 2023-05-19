@@ -1,4 +1,5 @@
 import backgroundImage from '../../../../assets/images/bg-image.png';
+
 const useStyles = () => {
   return {
     root: {

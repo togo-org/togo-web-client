@@ -1,14 +1,13 @@
 import { Box } from '@mui/material';
-import React from 'react'
-
-interface HeaderContainerProps { 
-    children: React.ReactNode;
+import React from 'react';
+import useStyles from './HeaderContainer.useStyles';
+interface HeaderContainerProps {
+  children: React.ReactNode;
 }
 
-const HeaderContainer = ({children} : HeaderContainerProps) => {
-  return (
-    <Box>{children}</Box>
-  )
-}
+const HeaderContainer = ({ children }: HeaderContainerProps) => {
+  const styles = useStyles();
+  return <Box sx={styles.root}>{children}</Box>;
+};
 
-export default HeaderContainer
+export default HeaderContainer;

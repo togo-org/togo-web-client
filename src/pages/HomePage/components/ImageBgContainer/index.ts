@@ -1,3 +1,3 @@
-import ImageBgContainer from '@pages/HomePage/components/ImageBgContainer/ImageBgContainer';
+import ImageBgContainer from '@/pages/HomePage/components/ImageBgContainer/ImageBgContainer';
 
 export default ImageBgContainer;
