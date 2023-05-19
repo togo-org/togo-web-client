@@ -5,6 +5,7 @@ import TitlesContainer from '@/pages/Splash/components/TitlesContainer';
 import BgImage from '@/shared/BgImage';
 import Button from '@/shared/Button';
 import { Box } from '@mui/material';
+import IMAGES from '@/utils/constants/IMAGES';
 
 const Splash = () => {
   return (
@@ -18,7 +19,7 @@ const Splash = () => {
         <Button label='התחברות באמצעות מייל' shape='pill' />
       </ButtonsContainer>
 
-      <BgImage />
+      <BgImage src={IMAGES.BgImage} alt='Background Image' />
     </Box>
   );
 };

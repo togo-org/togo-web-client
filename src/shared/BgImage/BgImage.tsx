@@ -1,11 +1,16 @@
-import IMAGES from '@/utils/constants/IMAGES';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
-const BgImage = () => {
+interface BgImageProps {
+  src: StaticImageData;
+  alt: string;
+}
+
+
+const BgImage = ({ src, alt }: BgImageProps) => {
   return (
     <Image
-      src={IMAGES.BgImage}
-      alt='Background image'
+      src={src}
+      alt={alt}
       style={{
         position: 'fixed',
         top: 0,
