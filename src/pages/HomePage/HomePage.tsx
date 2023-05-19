@@ -1,4 +1,4 @@
-import { Typography, Select } from '@mui/material';
+import { Typography } from '@mui/material';
 import ContentContainer from '@/pages/HomePage/components/ContentContainer'
 import ICONS from '@/utils/constants/ICONS';
 import Icon from '@/shared/Icon';

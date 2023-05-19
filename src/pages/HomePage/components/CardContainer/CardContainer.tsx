@@ -1,6 +1,7 @@
 import { Box } from '@mui/material';
 import useStyles from '@/pages/HomePage/components/CardContainer/CardContainer.useStyles';
 import React from 'react';
+
 interface CardContainerProps {
   children: React.ReactNode;
 }
