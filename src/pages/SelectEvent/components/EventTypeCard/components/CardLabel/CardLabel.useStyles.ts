@@ -10,6 +10,7 @@ const useStyles = () => {
       fontSize: '1.625rem',
       lineHeight: '30.81px',
       color: colors.grey.white,
+      textAlign: 'center',
     },
   };
 };
