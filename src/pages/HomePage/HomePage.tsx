@@ -1,6 +1,5 @@
 import { Typography, Select } from '@mui/material';
-import ContentContainer from './components/ContentContainer';
-
+import ContentContainer from './components/ContentContainer'
 import ICONS from '@utils/constants/ICONS';
 import Icon from '@shared/Icon';
 import Card from '@shared/Card';
@@ -8,6 +7,7 @@ import FoodImg from '@/assets/images/preview-card.png';
 import TyphographyContainer from './components/TyphograpyContainer';
 import Button from '@shared/Button';
 import CardContainer from './components/CardContainer/CardContainer';
+
 const HomePage = () => {
   return (
     <ContentContainer>
