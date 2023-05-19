@@ -4,6 +4,6 @@ export type UserEventType = 'restaurant' | 'trip' | 'attraction';
 
 export interface UserSearchDataInterface {
   what: UserEventType | null;
-  howMuch: number & { __naturalNumberBrand: true };
+  howMuch: number;
   when: Date;
 }
