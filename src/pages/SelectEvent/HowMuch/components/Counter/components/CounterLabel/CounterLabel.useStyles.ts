@@ -9,7 +9,11 @@ const useStyles = () => {
       color: grey.white,
       fontWeight: 'bold',
       fontFamily: 'Rubik',
-      flex: '2',
+      flex: '4',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
     },
   };
 };

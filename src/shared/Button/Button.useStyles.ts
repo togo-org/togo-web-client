@@ -28,6 +28,15 @@ const useStyles = ({ variant, size, color, shape }: ButtonOptionsInterface) => {
       },
     },
 
+    states: {
+      hover: {
+        '&:hover': {
+          backgroundColor: theme.palette[color].main,
+          borderColor: theme.palette[color].main,
+        },
+      },
+    },
+
     variant: {
       text: {
         border: 'none',
@@ -71,12 +80,41 @@ const useStyles = ({ variant, size, color, shape }: ButtonOptionsInterface) => {
     },
   };
 
+  const getHoverStyles = () => {
+    switch (variant) {
+      case 'text':
+        return {
+          '&:hover': {
+            backgroundColor: 'transparent',
+            borderColor: 'transparent',
+          },
+        };
+      case 'outlined':
+        return {
+          '&:hover': {
+            backgroundColor: 'transparent',
+            borderColor: theme.palette[color].main,
+          },
+        };
+      case 'contained':
+        return {
+          '&:hover': {
+            backgroundColor: theme.palette[color].main,
+            borderColor: theme.palette[color].main,
+          },
+        };
+      default:
+        return {};
+    }
+  };
+
   const getRootStyles = () => {
     const rootStyles = {
       ...styles.color[color],
       ...styles.variant[variant],
       ...styles.size[size],
       ...styles.shape[shape],
+      ...getHoverStyles(),
     };
 
     return rootStyles;

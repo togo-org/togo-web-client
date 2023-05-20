@@ -19,12 +19,21 @@ const Counter = () => {
     });
   };
 
+  const isButtonDisabled = () => {
+    if (howMuch === 1) return true;
+    return false;
+  };
+
   return (
     <CounterContainer>
       <CounterLabel label={String(howMuch)} />
       <CounterButtonContainer>
         <CounterButton label='+' onClick={() => updateCounterValue(1)} />
-        <CounterButton label='-' onClick={() => updateCounterValue(-1)} />
+        <CounterButton
+          label='-'
+          onClick={() => updateCounterValue(-1)}
+          isDisabled={isButtonDisabled()}
+        />
       </CounterButtonContainer>
     </CounterContainer>
   );

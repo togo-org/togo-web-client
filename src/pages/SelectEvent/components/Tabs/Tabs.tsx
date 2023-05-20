@@ -16,19 +16,29 @@ const Tabs = ({ setSelectedTab, selectedTab }: TabsProps) => {
       <Button
         label='מה?'
         onClick={() => setSelectedTab(SELECT_EVENT_TABS.WHAT)}
-        color={selectedTab === SELECT_EVENT_TABS.WHAT ? 'primary' : 'secondary'}
+        sx={
+          selectedTab === SELECT_EVENT_TABS.WHAT
+            ? styles.selectedTab
+            : styles.notSelectedTab
+        }
       />
       <Button
         label='כמה?'
         onClick={() => setSelectedTab(SELECT_EVENT_TABS.HOW_MUCH)}
-        color={
-          selectedTab === SELECT_EVENT_TABS.HOW_MUCH ? 'primary' : 'secondary'
+        sx={
+          selectedTab === SELECT_EVENT_TABS.HOW_MUCH
+            ? styles.selectedTab
+            : styles.notSelectedTab
         }
       />
       <Button
         label='מתי?'
         onClick={() => setSelectedTab(SELECT_EVENT_TABS.WHEN)}
-        color={selectedTab === SELECT_EVENT_TABS.WHEN ? 'primary' : 'secondary'}
+        sx={
+          selectedTab === SELECT_EVENT_TABS.WHEN
+            ? styles.selectedTab
+            : styles.notSelectedTab
+        }
       />
     </Box>
   );
