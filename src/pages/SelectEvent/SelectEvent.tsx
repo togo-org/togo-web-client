@@ -1,8 +1,8 @@
 import HowMuch from '@/pages/SelectEvent/HowMuch';
 import What from '@/pages/SelectEvent/What';
 import When from '@/pages/SelectEvent/When';
-import BottomContainer from '@/pages/SelectEvent/components/BottomContainer';
 import ContentContainer from '@/pages/SelectEvent/components/ContentContainer';
+import Footer from '@/pages/SelectEvent/components/Footer';
 import HeaderContainer from '@/pages/SelectEvent/components/HeaderContainer';
 import PageWrapper from '@/pages/SelectEvent/components/PageWrapper';
 import Tabs from '@/pages/SelectEvent/components/Tabs';
@@ -25,7 +25,7 @@ const SelectEvent = () => {
         {selectedTab === SELECT_EVENT_TABS.WHEN && <When />}
       </ContentContainer>
       <BgImage src={IMAGES.BgImage} alt='Background Image' />
-      <BottomContainer>Bottom Container</BottomContainer>
+      <Footer />
     </PageWrapper>
   );
 };
