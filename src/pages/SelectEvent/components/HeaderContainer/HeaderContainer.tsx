@@ -31,7 +31,7 @@ const HeaderContainer = ({ children, selectedTab }: HeaderContainerProps) => {
         justifyContent: 'space-between',
         alignItems: 'center',
         height: 'fit-content',
-        padding: '0px',
+        paddingBottom: '16px',
         gap: '20px',
       }}
     >
