@@ -9,6 +9,18 @@ const useStyles = () => {
       color: grey.white,
       fontWeight: 'bold',
       padding: '0',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      '&:hover': {
+        backgroundColor: 'none',
+        color: grey.white,
+      },
+    },
+
+    disabled: {
+      opacity: 0.3,
     },
   };
 };

@@ -10,6 +10,10 @@ const useStyles = () => {
       padding: '0.1rem 1rem',
       backgroundColor: grey.white,
       color: theme.palette.primary.main,
+      '&:hover': {
+        backgroundColor: grey.white,
+        color: theme.palette.primary.main,
+      },
     },
   };
 };

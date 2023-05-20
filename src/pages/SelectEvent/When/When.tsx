@@ -1,5 +1,4 @@
 import FineEventButton from '@/pages/SelectEvent/When/components/FineEventButton';
-import TabTitle from '@/pages/SelectEvent/components/TabTitle';
 import { userSearchDataState } from '@/store';
 import { Box, TextField, Typography } from '@mui/material';
 import React, { useState } from 'react';
@@ -47,7 +46,6 @@ const When = () => {
 
   return (
     <Box>
-      <TabTitle label='מתי הכי מתאים לך?' />
       <Typography>תאריך:</Typography>
       <TextField
         id='date'

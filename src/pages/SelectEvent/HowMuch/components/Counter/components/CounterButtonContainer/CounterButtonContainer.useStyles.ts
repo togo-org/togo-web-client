@@ -4,6 +4,7 @@ const useStyles = () => {
       display: 'flex',
       flexDirection: 'row',
       justifyContent: 'space-between',
+      flex: 1,
     },
   };
 };

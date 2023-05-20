@@ -9,13 +9,13 @@ const BottomContainer = ({ children }: BottomContainerProps) => {
   return (
     <Box
       sx={{
-        flexGrow: 1,
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'flex-end',
+        justifyContent: 'center',
         alignItems: 'center',
         width: '100%',
-        paddingBottom: '20px',
+        height: 'fit-content',
+        padding: '10px',
       }}
     >
       {children}

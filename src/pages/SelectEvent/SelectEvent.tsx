@@ -16,7 +16,7 @@ const SelectEvent = () => {
 
   return (
     <PageWrapper>
-      <HeaderContainer>
+      <HeaderContainer selectedTab={selectedTab}>
         <Tabs setSelectedTab={setSelectedTab} selectedTab={selectedTab} />
       </HeaderContainer>
       <ContentContainer>

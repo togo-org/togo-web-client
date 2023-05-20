@@ -12,6 +12,8 @@ const useStyles = () => {
       justifyContent: 'center',
       width: '100%',
       padding: '20px',
+      height: '100%',
+      maxHeight: '326px',
     },
   };
 };
