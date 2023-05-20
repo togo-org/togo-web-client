@@ -1,11 +1,11 @@
 import { Box } from '@mui/material';
 import React from 'react';
 
-interface BottomContainerProps {
+interface FooterContainerProps {
   children: React.ReactNode;
 }
 
-const BottomContainer = ({ children }: BottomContainerProps) => {
+const FooterContainer = ({ children }: FooterContainerProps) => {
   return (
     <Box
       sx={{
@@ -23,4 +23,4 @@ const BottomContainer = ({ children }: BottomContainerProps) => {
   );
 };
 
-export default BottomContainer;
+export default FooterContainer;
