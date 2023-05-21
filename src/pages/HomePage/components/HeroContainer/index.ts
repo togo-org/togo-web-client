@@ -1,3 +1,3 @@
-import TyphographyContainer from "./HeroContainer";
+import HeroContainer from "./HeroContainer";
 
-export default TyphographyContainer;
+export default HeroContainer;
