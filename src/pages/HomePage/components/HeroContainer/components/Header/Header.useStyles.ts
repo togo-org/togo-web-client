@@ -1,10 +1,21 @@
-
 const useStyles = () => {
-    return {
-        icon: {
-        alignSelf: 'flex-start',
-        },
-    };
-}
+  return {
+    root: {
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
+      gap: '2rem',
+    },
+    content: {
+      fontSize: '1.5rem',
+      fontFamily: 'Roboto',
+    },
+    content2: {
+      fontSize: '1rem',
+      fontFamily: 'Roboto',
+    },
+  };
+};
 
-export default useStyles
+export default useStyles;

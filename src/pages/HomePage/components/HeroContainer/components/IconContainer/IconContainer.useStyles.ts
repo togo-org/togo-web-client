@@ -2,8 +2,10 @@ const useStyles = () => {
   return {
     root: {
       width: '100%',
-      height: '100px',
+      display: 'flex',
+      justifyContent: 'flex-start',
     },
   };
 };
+
 export default useStyles;
