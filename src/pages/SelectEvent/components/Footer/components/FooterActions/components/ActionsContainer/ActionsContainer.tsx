@@ -6,7 +6,19 @@ interface ActionsContainerProps {
 }
 
 const ActionsContainer = ({ children }: ActionsContainerProps) => {
-  return <Box>{children}</Box>;
+  return (
+    <Box
+      sx={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        width: '100%',
+        padding: '0 47px',
+      }}
+    >
+      {children}
+    </Box>
+  );
 };
 
 export default ActionsContainer;

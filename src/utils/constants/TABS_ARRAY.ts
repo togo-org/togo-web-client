@@ -1,0 +1,9 @@
+import SELECT_EVENT_TABS from '@/utils/constants/SELECT_EVENT_TABS';
+
+const TABS_ARRAY = [
+  SELECT_EVENT_TABS.WHAT,
+  SELECT_EVENT_TABS.HOW_MUCH,
+  SELECT_EVENT_TABS.WHEN,
+];
+
+export default TABS_ARRAY;
