@@ -1,6 +1,6 @@
 import { Box } from '@mui/material';
 import React from 'react';
-import useStyles from './Typhography.useStyles';
+import useStyles from './HeroContainer.useStyles';
 
 interface TyphographyContainerProps {
   children: React.ReactNode;

@@ -14,6 +14,9 @@ const useStyles = () => {
       backgroundImage: `url(${backgroundImage})`,
       backgroundRepeat: 'no-repeat',
     },
+    icon: {
+      alignSelf: 'flex-start',
+    },
     header: {
       fontSize: '2rem',
     },
