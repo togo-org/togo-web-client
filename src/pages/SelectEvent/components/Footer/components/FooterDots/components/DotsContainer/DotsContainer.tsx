@@ -6,7 +6,19 @@ interface DotsContainerProps {
 }
 
 const DotsContainer = ({ children }: DotsContainerProps) => {
-  return <Box>{children}</Box>;
+  return (
+    <Box
+      sx={{
+        display: 'flex',
+        direction: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+        gap: '4px',
+      }}
+    >
+      {children}
+    </Box>
+  );
 };
 
 export default DotsContainer;
