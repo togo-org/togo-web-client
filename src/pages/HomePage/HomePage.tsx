@@ -7,10 +7,9 @@ import FoodImg from '@/assets/images/preview-card.png';
 import HeroContainer from '@/pages/HomePage/components/HeroContainer';
 import Button from '@/shared/Button';
 import CardContainer from '@/pages/HomePage/components/CardContainer/CardContainer';
-import useStyles from '@/pages/HomePage/HomePage.useStyles';
 
 const HomePage = () => {
-  const styles = useStyles();
+  
   return (
     <ContentContainer>
       <HeroContainer>
