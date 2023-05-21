@@ -6,10 +6,10 @@ const useStyles = () => {
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'flex-start',
-      gap: '100px',
+      gap: '40px',
       alignItems: 'left',
-      width: '100vw',
-      height: '100vh',
+      width: '100%',
+      height: '100%',
     },
   };
 };

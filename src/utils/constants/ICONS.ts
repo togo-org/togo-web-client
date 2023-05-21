@@ -14,20 +14,20 @@ import Smile from '../../assets/icons/smile.svg';
 import Star from '../../assets/icons/star.svg';
 
 const ICONS = {
-	ArrowBack,
-	ArrowForward,
-	Calendar,
-	Close,
-	Heart,
-	HelpCircle,
-	Home,
-	KnifeAndFork,
-	Menu,
-	MessageCircle,
-	Search,
-	Settings,
-	Smile,
-	Star,
+  ArrowBack,
+  ArrowForward,
+  Calendar,
+  Close,
+  Heart,
+  HelpCircle,
+  Home,
+  KnifeAndFork,
+  Menu,
+  MessageCircle,
+  Search,
+  Settings,
+  Smile,
+  Star,
 };
 
 export default ICONS;
