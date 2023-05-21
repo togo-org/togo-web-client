@@ -7,7 +7,11 @@ type ButtonShape = 'circle' | 'pill' | 'default';
 
 interface ButtonProps {
   label: string;
-  onClick?: () => void;
+  onClick?:
+    | (() => void)
+    // eslint-disable-next-line no-unused-vars
+    | ((event: React.MouseEvent<HTMLButtonElement>) => void);
+
   variant?: ButtonVariant;
   size?: ButtonSize;
   color?: ButtonColor;
