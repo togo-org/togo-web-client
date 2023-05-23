@@ -25,3 +25,11 @@ export const eventsResultsState = atom({
   key: 'eventsResultsState',
   default: [],
 }) as RecoilState<EventInterface[] | []>;
+
+export const userLocationState = atom({
+  key: 'userLocationState',
+  default: {
+    lat: 0,
+    lng: 0,
+  },
+}) as RecoilState<{ lat: number; lng: number }>;
