@@ -8,6 +8,10 @@ const Navbar = () => {
       sx={{
         display: 'flex',
         gap: '10px',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: '10px',
       }}
     >
       <NavLink href='/' label='Home' />
@@ -15,6 +19,7 @@ const Navbar = () => {
       <NavLink href='/Splash' label='Splash' />
       <NavLink href='/SelectEvent' label='Select Event' />
       <NavLink href='/HamburgerPage' label='Hamburger' />
+      <NavLink href='/ResultsPage' label='Results' />
     </Box>
   );
 };
