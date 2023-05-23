@@ -20,6 +20,7 @@ export interface EventInterface {
   city: string;
   image: string | StaticImageData;
   tags: string[];
+  link?: string;
   coordinates: {
     latitude: number;
     longitude: number;
