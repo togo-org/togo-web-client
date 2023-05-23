@@ -10,8 +10,22 @@ const Button = ({
   shape = 'default',
   onClick,
   sx: customSx,
+  href,
 }: ButtonProps) => {
   const styles = useStyles({ variant, color, size, shape });
+
+  if (href) {
+    return (
+      <MuiButton
+        sx={{ ...styles.root, ...styles.width, ...customSx }}
+        onClick={onClick}
+        component='a'
+        href={href}
+      >
+        <Typography sx={styles.typography}>{label}</Typography>
+      </MuiButton>
+    );
+  }
 
   return (
     <MuiButton
