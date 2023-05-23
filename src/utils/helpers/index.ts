@@ -15,7 +15,11 @@ export const getEventsByCategory = (
   category: Category | null
 ) => {
   if (category) {
-    return events.filter((event) => event.category === category);
+    const filteredEvents = events.filter(
+      (event) => event.category === category
+    );
+
+    return filteredEvents;
   }
   return events;
 };

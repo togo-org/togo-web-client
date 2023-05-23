@@ -6,7 +6,7 @@ import { useRouter } from 'next/router';
 const BackButton = () => {
   const router = useRouter();
   const handleBackArrowClick = () => {
-    router.back();
+    router.push('/SelectEvent');
   };
   return (
     <Box
