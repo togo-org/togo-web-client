@@ -9,11 +9,15 @@ const Button = ({
   size = 'medium',
   shape = 'default',
   onClick,
+  sx: customSx,
 }: ButtonProps) => {
   const styles = useStyles({ variant, color, size, shape });
 
   return (
-    <MuiButton sx={{ ...styles.root, ...styles.width }} onClick={onClick}>
+    <MuiButton
+      sx={{ ...styles.root, ...styles.width, ...customSx }}
+      onClick={onClick}
+    >
       <Typography sx={styles.typography}>{label}</Typography>
     </MuiButton>
   );

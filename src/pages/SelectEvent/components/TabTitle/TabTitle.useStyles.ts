@@ -4,7 +4,7 @@ const useStyles = () => {
       fontSize: '1.375rem',
       fontWeight: 'bold',
       fontStyle: 'italic',
-      marginBottom: '30px',
+      textAlign: 'center',
     },
   };
 };

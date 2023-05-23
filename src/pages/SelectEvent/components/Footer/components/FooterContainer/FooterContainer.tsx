@@ -1,21 +1,21 @@
 import { Box } from '@mui/material';
 import React from 'react';
 
-interface BottomContainerProps {
+interface FooterContainerProps {
   children: React.ReactNode;
 }
 
-const BottomContainer = ({ children }: BottomContainerProps) => {
+const FooterContainer = ({ children }: FooterContainerProps) => {
   return (
     <Box
       sx={{
-        flexGrow: 1,
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'flex-end',
+        justifyContent: 'center',
         alignItems: 'center',
         width: '100%',
-        paddingBottom: '20px',
+        height: 'fit-content',
+        padding: '10px',
       }}
     >
       {children}
@@ -23,4 +23,4 @@ const BottomContainer = ({ children }: BottomContainerProps) => {
   );
 };
 
-export default BottomContainer;
+export default FooterContainer;
