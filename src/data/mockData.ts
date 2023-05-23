@@ -27,7 +27,7 @@ const mockData: EventInterface[] = [
     category: 'restaurant',
     address: 'יפו',
     distance: 20,
-    image: IMAGES.CardAttraction,
+    image: IMAGES.CardRestaurant,
     tags: ['בשרי', 'אוכל מזרחי'],
   },
   {
