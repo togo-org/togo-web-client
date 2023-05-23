@@ -41,6 +41,7 @@ const useStyles = ({ variant, size, color, shape }: ButtonOptionsInterface) => {
       text: {
         border: 'none',
         backgroundColor: 'transparent',
+        color: theme.palette[color].main,
       },
       outlined: {
         borderStyle: 'solid',
