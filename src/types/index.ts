@@ -17,6 +17,11 @@ export interface EventInterface {
   name: string;
   category: Category;
   address: string;
+  city: string;
   image: string | StaticImageData;
   tags: string[];
+  coordinates: {
+    latitude: number;
+    longitude: number;
+  };
 }
