@@ -93,7 +93,15 @@ const mockData: mockDataInterface[] = [
     distance: 10,
     image: `${IMAGES.CardTrip}`,
     tags: ['טבע', 'על האש'],
-  },
+  },{
+    id: 10,
+    name: 'גן יפו',
+    category: 'resturant',
+    address: 'ירושליים',
+    distance: 10,
+    image: `${IMAGES.CardAttraction}`,
+    tags: ['בשרי', 'אוכל מזרחי'],
+  }
 ];
 
 export default mockData;

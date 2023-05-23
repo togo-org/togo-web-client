@@ -10,19 +10,51 @@ import mockData from '@/data/mockData';
 function getDataByCategory(type: string) {
   return mockData.filter((item) => item.category === type);
 }
+interface CardContainerProps {
+  type: 'resturant' | 'attraction' | 'trip';
+}
+function selectType(type : string) {
+  switch (type) {
+      case 'resturant':{
+          return 'מסעדות'
+      }
+      case 'attraction':{
+          return 'אטרקציות'
 
-const CardContainer = () => {
+  }
+      case 'trip':{
+          return 'טיולים'
+
+} default :{
+    return 'default'
+}
+
+}}
+
+
+
+
+
+
+const CardContainer = ({type} : CardContainerProps) => {
   const styles = useStyles();
+  
+  
+  
+  
+  
   return (
     <Box sx={styles.root}>
       <Box sx={styles.header}>
-        <Typography>מסעדות</Typography>
+        <Typography>{selectType(type)}</Typography>
         <Icon src={ICONS.KnifeAndFork} size='m' alt='close' />
       </Box>
-      <Box sx={styles.card} >
-        {getDataByCategory('resturant').map((item) => {
+      <Box sx={styles.cardContainer}>
+        {getDataByCategory(type).map((item) => {
           console.log(getDataByCategory('restaurant'));
-          return <Card key={item.id} src={IMAGES.CardRestaurant} alt={item.name} />;
+          return (
+            <Card key={item.id} src={IMAGES.CardRestaurant} alt={item.name} />
+          );
         })}
       </Box>
     </Box>

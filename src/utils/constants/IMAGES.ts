@@ -3,6 +3,8 @@ import CardAttraction from '../../assets/images/card-attraction.png';
 import CardRestaurant from '../../assets/images/card-restaurant.png';
 import CardTrip from '../../assets/images/card-trip.png';
 import PreviewCardImage from '../../assets/images/preview-card.png';
+import HeroContainerBgImage from '../../assets/images/home-page-bg.png';
+import HomePageBodyContainerBgImage from '../../assets/images/homepage-bodycontainer-bg.png';
 
 const IMAGES = {
   BgImage,
@@ -10,6 +12,8 @@ const IMAGES = {
   CardTrip,
   CardRestaurant,
   CardAttraction,
+  HeroContainerBgImage,
+  HomePageBodyContainerBgImage,
 };
 
 export default IMAGES;
