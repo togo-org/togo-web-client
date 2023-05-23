@@ -1,14 +1,12 @@
 import Button from '@/shared/Button';
+import { useUpdateResults } from '@/utils/hooks';
 
-interface RefreshButtonProps {
-  onClick: () => void;
-}
-
-const RefreshButton = ({ onClick }: RefreshButtonProps) => {
+const RefreshButton = () => {
+  const updateResults = useUpdateResults();
   return (
     <Button
       label='רענן תוצאות'
-      onClick={onClick}
+      onClick={updateResults}
       variant='text'
       color='primary'
     />

@@ -1,22 +1,12 @@
 import IMAGES from '@/utils/constants/IMAGES';
 
-type Category = 'trip' | 'resturant' | 'attraction';
+import { EventInterface } from '@/types';
 
-interface mockDataInterface {
-  id: number;
-  name: string;
-  category: Category;
-  address: string;
-  distance: number;
-  image: string;
-  tags: string[];
-}
-
-const mockData: mockDataInterface[] = [
+const mockData: EventInterface[] = [
   {
     id: 1,
     name: 'זוזוברה',
-    category: 'resturant',
+    category: 'restaurant',
     address: 'הרצליה',
     distance: 100,
     image: `${IMAGES.CardRestaurant}`,
@@ -25,7 +15,7 @@ const mockData: mockDataInterface[] = [
   {
     id: 2,
     name: 'אבו-חסאן',
-    category: 'resturant',
+    category: 'restaurant',
     address: 'יפו',
     distance: 20,
     image: `${IMAGES.CardRestaurant}`,
@@ -34,7 +24,7 @@ const mockData: mockDataInterface[] = [
   {
     id: 3,
     name: 'גן יפו',
-    category: 'resturant',
+    category: 'restaurant',
     address: 'יפו',
     distance: 20,
     image: `${IMAGES.CardAttraction}`,

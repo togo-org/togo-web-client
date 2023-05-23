@@ -3,14 +3,10 @@ import NotFindResultsLabel from '@/pages/ResultsPage/components/Footer/component
 import RefreshButton from '@/pages/ResultsPage/components/Footer/components/RefreshButton';
 
 const Footer = () => {
-  const handleRefreshClick = () => {
-    console.log('Refresh');
-  };
-
   return (
     <FooterContainer>
       <NotFindResultsLabel label='לא הוצאות שחיפשת?' />
-      <RefreshButton onClick={handleRefreshClick} />
+      <RefreshButton />
     </FooterContainer>
   );
 };
