@@ -6,7 +6,23 @@ interface MainContainerProps {
 }
 
 const MainContainer = ({ children }: MainContainerProps) => {
-  return <Box component='main'>{children}</Box>;
+  return (
+    <Box
+      component='main'
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        gap: '15px',
+        width: '100%',
+        padding: '10px',
+      }}
+      flexGrow='1'
+    >
+      {children}
+    </Box>
+  );
 };
 
 export default MainContainer;

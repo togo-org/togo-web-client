@@ -1,3 +1,5 @@
+import { StaticImageData } from 'next/image';
+
 export type CustomPaletteModeState = 'light' | 'dark' | 'mystical';
 
 export type UserEventType = 'restaurant' | 'trip' | 'attraction';
@@ -16,6 +18,6 @@ export interface EventInterface {
   category: Category;
   address: string;
   distance: number;
-  image: string;
+  image: string | StaticImageData;
   tags: string[];
 }

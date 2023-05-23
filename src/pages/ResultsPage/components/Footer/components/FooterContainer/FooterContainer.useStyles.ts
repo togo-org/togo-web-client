@@ -5,6 +5,7 @@ const useStyles = () => {
       alignItems: 'center',
       flexDirection: 'row',
       display: 'flex',
+      width: '100%',
     },
   };
 };

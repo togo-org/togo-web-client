@@ -9,7 +9,7 @@ const mockData: EventInterface[] = [
     category: 'restaurant',
     address: 'הרצליה',
     distance: 100,
-    image: `${IMAGES.CardRestaurant}`,
+    image: IMAGES.CardRestaurant, // TODO: check if need to be `${IMAGES.CardRestaurant}`,
     tags: ['אוכל אסייאתי', 'nature'],
   },
   {
@@ -18,7 +18,7 @@ const mockData: EventInterface[] = [
     category: 'restaurant',
     address: 'יפו',
     distance: 20,
-    image: `${IMAGES.CardRestaurant}`,
+    image: IMAGES.CardRestaurant,
     tags: ['חומוס', 'אוכל ערבי'],
   },
   {
@@ -27,7 +27,7 @@ const mockData: EventInterface[] = [
     category: 'restaurant',
     address: 'יפו',
     distance: 20,
-    image: `${IMAGES.CardAttraction}`,
+    image: IMAGES.CardAttraction,
     tags: ['בשרי', 'אוכל מזרחי'],
   },
   {
@@ -36,7 +36,7 @@ const mockData: EventInterface[] = [
     category: 'attraction',
     address: 'ירושליים',
     distance: 10,
-    image: `${IMAGES.CardAttraction}`,
+    image: IMAGES.CardAttraction,
     tags: ['בשרי', 'אוכל מזרחי'],
   },
   {
@@ -45,7 +45,7 @@ const mockData: EventInterface[] = [
     category: 'attraction',
     address: 'ירושליים',
     distance: 10,
-    image: `${IMAGES.CardAttraction}`,
+    image: IMAGES.CardAttraction,
     tags: ['בשרי', 'אוכל מזרחי'],
   },
   {
@@ -54,7 +54,7 @@ const mockData: EventInterface[] = [
     category: 'attraction',
     address: 'ירושליים',
     distance: 30,
-    image: `${IMAGES.CardAttraction}`,
+    image: IMAGES.CardAttraction,
     tags: ['טבע', 'על האש'],
   },
   {
@@ -63,7 +63,7 @@ const mockData: EventInterface[] = [
     category: 'trip',
     address: 'תל אביב',
     distance: 30,
-    image: `${IMAGES.CardTrip}`,
+    image: IMAGES.CardTrip,
     tags: ['טבע', 'על האש'],
   },
   {
@@ -72,7 +72,7 @@ const mockData: EventInterface[] = [
     category: 'trip',
     address: 'נגב',
     distance: 20,
-    image: `${IMAGES.CardTrip}`,
+    image: IMAGES.CardTrip,
     tags: ['טבע', 'מדבר'],
   },
   {
@@ -81,7 +81,7 @@ const mockData: EventInterface[] = [
     category: 'trip',
     address: 'ירושליים',
     distance: 10,
-    image: `${IMAGES.CardTrip}`,
+    image: IMAGES.CardTrip,
     tags: ['טבע', 'על האש'],
   },
 ];
