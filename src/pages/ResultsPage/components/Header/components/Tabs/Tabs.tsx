@@ -1,4 +1,4 @@
-import Tab from '@/pages/ResultsPage/components/Header/components/Tabs/components/Tab/Tab';
+import Tab from '@/pages/ResultsPage/components/Header/components/Tabs/components/Tab';
 import TabsContainer from '@/pages/ResultsPage/components/Header/components/Tabs/components/TabsContainer';
 import { userSearchDataState } from '@/store';
 import { useRecoilValue } from 'recoil';
