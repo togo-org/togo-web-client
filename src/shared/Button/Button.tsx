@@ -1,6 +1,6 @@
 import ButtonProps from '@/shared/Button/Button.types';
 import useStyles from '@/shared/Button/Button.useStyles';
-import { Button as MuiButton, Typography } from '@mui/material';
+import { Link, Button as MuiButton, Typography } from '@mui/material';
 
 const Button = ({
   label,
@@ -16,14 +16,17 @@ const Button = ({
 
   if (href) {
     return (
-      <MuiButton
-        sx={{ ...styles.root, ...styles.width, ...customSx }}
-        onClick={onClick}
-        component='a'
+      <Link
         href={href}
+        sx={{
+          ...styles.root,
+          ...styles.width,
+          ...customSx,
+          textDecoration: 'none',
+        }}
       >
         <Typography sx={styles.typography}>{label}</Typography>
-      </MuiButton>
+      </Link>
     );
   }
 
