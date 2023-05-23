@@ -17,7 +17,6 @@ export interface EventInterface {
   name: string;
   category: Category;
   address: string;
-  distance: number;
   image: string | StaticImageData;
   tags: string[];
 }

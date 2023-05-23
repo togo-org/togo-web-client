@@ -7,7 +7,7 @@ interface CardProps {
 }
 
 const Card = ({ event }: CardProps) => {
-  const { name, address, distance, image } = event;
+  const { name, address, image } = event;
   return (
     <Box
       sx={{
@@ -32,7 +32,6 @@ const Card = ({ event }: CardProps) => {
           }}
         >
           <Typography>{name}</Typography>
-          <Typography>{distance} ק״מ</Typography>
         </Box>
         <Box>
           <Typography>{address}</Typography>
@@ -67,7 +66,7 @@ const Card = ({ event }: CardProps) => {
         sx={{
           position: 'absolute',
           bottom: '0',
-          backgroundColor: 'rgba(0, 0, 0, 0.28)',
+          backgroundColor: 'rgba(0, 0, 0, 0.418)',
           width: '100%',
           height: '100%',
           borderRadius: '10px',
