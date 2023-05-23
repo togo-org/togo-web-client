@@ -17,6 +17,7 @@ interface ButtonProps {
   color?: ButtonColor;
   shape?: ButtonShape;
   sx?: SxProps;
+  href?: string;
 }
 
 export interface ButtonOptionsInterface {
