@@ -1,14 +1,12 @@
 const useStyles = () => {
   return {
     root: {
-      position: 'relative',
       border: '1px solid red',
       display: 'flex',
       flexDirection: 'column',
-      justifyContent: 'flex-start',
-      gap: '40px',
-      alignItems: 'left',
-      width: '100%',
+
+      
+      width: '109%',
       height: '100%',
     },
   };

@@ -127,10 +127,24 @@ const mockData: EventInterface[] = [
     tags: ['טבע', 'על האש'],
     link: 'https://www.beitarfc.co.il/%D7%90%D7%99%D7%A6%D7%98%D7%93%D7%99%D7%95%D7%9F-%D7%98%D7%93%D7%99/',
     coordinates: {
+      latitude: 31.778860,
+      longitude: 35.203070
+    }
+  },
+  {
+    id: 10,
+    name: 'גן יפו',
+    category: 'restaurant',
+    address: 'ירושליים',
+    city: 'ירושלים',
+    image: `${IMAGES.CardAttraction}`,
+    tags: ['בשרי', 'אוכל מזרחי'],
+    coordinates: {
       latitude: 32.166,
       longitude: 34.843,
     },
-  },
+  }
 ];
+  
 
 export default mockData;
