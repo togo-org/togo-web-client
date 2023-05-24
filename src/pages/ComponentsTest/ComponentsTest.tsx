@@ -4,19 +4,13 @@ import PageContainer from '@/pages/ComponentsTest/PageContainer';
 import ButtonsSection from '@/pages/ComponentsTest/sections/ButtonsSection';
 import ChipsSection from '@/pages/ComponentsTest/sections/ChipsSection';
 import IconsSection from '@/pages/ComponentsTest/sections/IconsSection';
-import Card from '@/shared/Card';
-import IMAGES from '@/utils/constants/IMAGES';
 import React from 'react';
 
 const ComponentsTest = () => {
   return (
     <PageContainer>
       <Header />
-      <ComponentSection
-        title='Card'
-        description='The card in the application'
-        componentsCountainer={<Card src={IMAGES.PreviewCardImage} alt='img' />}
-      />
+   
 
       <ComponentSection
         title='Buttons'
