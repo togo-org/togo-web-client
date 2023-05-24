@@ -13,36 +13,26 @@ function getDataByCategory(type: string) {
 interface CardContainerProps {
   type: 'resturant' | 'attraction' | 'trip';
 }
-function selectType(type : string) {
+function selectType(type: string) {
   switch (type) {
-      case 'resturant':{
-          return 'מסעדות'
-      }
-      case 'attraction':{
-          return 'אטרקציות'
-
+    case 'resturant': {
+      return 'מסעדות';
+    }
+    case 'attraction': {
+      return 'אטרקציות';
+    }
+    case 'trip': {
+      return 'טיולים';
+    }
+    default: {
+      return 'default';
+    }
   }
-      case 'trip':{
-          return 'טיולים'
-
-} default :{
-    return 'default'
 }
 
-}}
-
-
-
-
-
-
-const CardContainer = ({type} : CardContainerProps) => {
+const CardContainer = ({ type }: CardContainerProps) => {
   const styles = useStyles();
-  
-  
-  
-  
-  
+
   return (
     <Box sx={styles.root}>
       <Box sx={styles.header}>
@@ -53,9 +43,6 @@ const CardContainer = ({type} : CardContainerProps) => {
       <Box sx={styles.cardContainer}>
         {getDataByCategory(type).map((item) => {
           console.log(getDataByCategory('restaurant'));
-
-      <Box sx={styles.card}>
-        {getDataByCategory('resturant').map((item) => {
 
           return (
             <Card key={item.id} src={IMAGES.CardRestaurant} alt={item.name} />
