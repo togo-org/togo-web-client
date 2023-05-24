@@ -26,12 +26,12 @@ const HamburgerPage = () => {
             </TitlesContainer>
             <ContentContainer>
                 <SectionContainer>
-                    <TextAndIcon text={'איך טוגו עוזרת לי'} icon={ICONS.HelpCircle} />
+                    <TextAndIcon text='איך טוגו עוזרת לי' icon={ICONS.HelpCircle} />
                     <Button label='מה זה טוגו?' shape='pill' />
                 </SectionContainer>
 
                 <SectionContainer>
-                    <TextAndIcon text={'רוצים לקבל הצעות טובות ומדויקות יותר?'} icon={ICONS.Smile} />
+                    <TextAndIcon text='רוצים לקבל הצעות טובות ומדויקות יותר?' icon={ICONS.Smile} />
                     <Button label='לחצו להרשמה' shape='pill' />
                 </SectionContainer>
 
