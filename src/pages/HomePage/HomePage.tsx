@@ -3,7 +3,7 @@ import HeroContainer from '@/pages/HomePage/components/HeroContainer';
 import CardContainer from '@/pages/HomePage/components/CardContainer/CardContainer';
 import BgImage from '@/pages/HomePage/components/BgImage';
 import IMAGES from '@/utils/constants/IMAGES';
-import BodyContainer from './components/BodyContainer';
+import BodyContainer from '@/pages/HomePage/components/BodyContainer';
 
 const HomePage = () => {
   return (
