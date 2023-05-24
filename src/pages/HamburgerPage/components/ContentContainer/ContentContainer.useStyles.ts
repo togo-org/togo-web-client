@@ -2,12 +2,13 @@ const useStyles = () => {
     return {
         root: {
             position: 'relative',
-            top: '50px',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
+            top: '30px',
+            height: '90%',
+            width: '100%',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
+            border: '2px solid black',
         }
     }
 }

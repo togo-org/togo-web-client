@@ -11,6 +11,11 @@ const useStyles = () => {
             fontWeight: 'bold',
             fontFamily: 'sans-serif',
         },
+        icon: {
+            position: 'absolute',
+            left: '170px',
+            bottom: '0px'
+        }
     };
 };
 
