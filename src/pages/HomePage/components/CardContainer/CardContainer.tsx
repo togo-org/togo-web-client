@@ -1,9 +1,8 @@
 import mockData from '@/data/mockData';
 import useStyles from '@/pages/HomePage/components/CardContainer/CardContainer.useStyles';
-import Card from '@/shared/Card';
+import Card from '@/pages/HomePage/components/CardContainer/components/Card/Card';
 import Icon from '@/shared/Icon';
 import ICONS from '@/utils/constants/ICONS';
-import IMAGES from '@/utils/constants/IMAGES';
 import { Box, Typography } from '@mui/material';
 import React from 'react';
 
@@ -11,11 +10,11 @@ function getDataByCategory(type: string) {
   return mockData.filter((item) => item.category === type);
 }
 interface CardContainerProps {
-  type: 'resturant' | 'attraction' | 'trip';
+  type: 'restaurant' | 'attraction' | 'trip';
 }
 function selectType(type: string) {
   switch (type) {
-    case 'resturant': {
+    case 'restaurant': {
       return 'מסעדות';
     }
     case 'attraction': {
@@ -32,6 +31,7 @@ function selectType(type: string) {
 
 const CardContainer = ({ type }: CardContainerProps) => {
   const styles = useStyles();
+  
 
   return (
     <Box sx={styles.root}>
@@ -45,7 +45,7 @@ const CardContainer = ({ type }: CardContainerProps) => {
           console.log(getDataByCategory('restaurant'));
 
           return (
-            <Card key={item.id} src={IMAGES.CardRestaurant} alt={item.name} />
+            <Card key={item.id} event={item}  />
           );
         })}
       </Box>

@@ -10,7 +10,7 @@ const HomePage = () => {
     <ContentContainer>
       <HeroContainer />
       <BodyContainer>
-        <CardContainer type='resturant' />
+        <CardContainer type='restaurant' />
         <CardContainer type='trip' />
         <CardContainer type='attraction' />
         <BgImage src={IMAGES.HomePageBodyContainerBgImage} alt='bg' />
