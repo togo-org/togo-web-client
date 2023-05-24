@@ -1,11 +1,14 @@
 const useStyles = () => {
     return {
         root: {
-            position: 'absolute',
-            width: '317px',
-            height: '658px',
-            left: 'calc(50% - 317px/2)',
-            top: 'calc(50 % - 658px / 2)',
+            position: 'relative',
+            top: '50px',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            border: '1px solid black',
         }
     }
 }

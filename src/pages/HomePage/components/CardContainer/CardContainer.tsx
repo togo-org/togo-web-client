@@ -1,11 +1,11 @@
-import { Box, Typography } from '@mui/material';
+import mockData from '@/data/mockData';
 import useStyles from '@/pages/HomePage/components/CardContainer/CardContainer.useStyles';
-import React from 'react';
+import Card from '@/shared/Card';
 import Icon from '@/shared/Icon';
 import ICONS from '@/utils/constants/ICONS';
-import Card from '@/shared/Card';
 import IMAGES from '@/utils/constants/IMAGES';
-import mockData from '@/data/mockData';
+import { Box, Typography } from '@mui/material';
+import React from 'react';
 
 function getDataByCategory(type: string) {
   return mockData.filter((item) => item.category === type);
@@ -49,9 +49,14 @@ const CardContainer = ({type} : CardContainerProps) => {
         <Typography>{selectType(type)}</Typography>
         <Icon src={ICONS.KnifeAndFork} size='m' alt='close' />
       </Box>
+
       <Box sx={styles.cardContainer}>
         {getDataByCategory(type).map((item) => {
           console.log(getDataByCategory('restaurant'));
+
+      <Box sx={styles.card}>
+        {getDataByCategory('resturant').map((item) => {
+
           return (
             <Card key={item.id} src={IMAGES.CardRestaurant} alt={item.name} />
           );

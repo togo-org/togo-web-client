@@ -1,12 +1,11 @@
 const useStyles = () => {
     return {
         root: {
-            position: 'relative',
+            position: 'absolute',
+            padding: '35px 27px',
             width: '100%',
             height: '100%',
-            left: '30px',
-            backgroundColor: '#EADDFF',
-            borderRadius: '10px 0px 0px 10px',
+            border: '3px solid red'
         }
     }
 }
