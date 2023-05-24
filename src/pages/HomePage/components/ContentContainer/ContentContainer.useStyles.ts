@@ -4,9 +4,7 @@ const useStyles = () => {
       border: '1px solid red',
       display: 'flex',
       flexDirection: 'column',
-
-      
-      width: '100%',
+     
       height: '100%',
     },
   };

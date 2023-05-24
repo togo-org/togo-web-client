@@ -14,7 +14,7 @@ const useStyles = () => {
       fontFamily: 'rubik',
       fontSize: '1.16rem',
       borderRadius: '15px',
-      width: '40%',
+      width: '50%',
       height: 'fit-content',
       gap: '1px',
     },
