@@ -4,11 +4,17 @@ import CardContainer from '@/pages/HomePage/components/CardContainer/CardContain
 import BgImage from '@/pages/HomePage/components/BgImage';
 import IMAGES from '@/utils/constants/IMAGES';
 import BodyContainer from '@/pages/HomePage/components/BodyContainer';
+import { useRecoilValue } from 'recoil';
+import { isMenuOpenState } from '@/store';
+import HamburgerPage from '../HamburgerPage';
 
 const HomePage = () => {
-  return (
+  const isMenuOpen = useRecoilValue<boolean>(isMenuOpenState);
+  return isMenuOpen ? (
+    <HamburgerPage />
+  ) : (
     <ContentContainer>
-      <HeroContainer />
+      <HeroContainer/>
       <BodyContainer>
         <CardContainer type='restaurant' />
         <CardContainer type='trip' />
@@ -18,5 +24,4 @@ const HomePage = () => {
     </ContentContainer>
   );
 };
-
 export default HomePage;
