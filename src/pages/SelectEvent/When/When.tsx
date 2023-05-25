@@ -1,4 +1,5 @@
 import FineEventButton from '@/pages/SelectEvent/When/components/FineEventButton';
+import SelectDay from '@/pages/SelectEvent/When/components/SelectDay';
 import { userSearchDataState } from '@/store';
 import { Box, TextField, Typography } from '@mui/material';
 import React, { useState } from 'react';
@@ -45,17 +46,35 @@ const When = () => {
   };
 
   return (
-    <Box>
-      <Typography>תאריך:</Typography>
-      <TextField
-        id='date'
-        type='date'
-        defaultValue={getFormattedDate(currentDate)}
-        InputLabelProps={{
-          shrink: true,
+    <Box
+      sx={{
+        padding: '10px',
+        height: '100%',
+        width: '100%',
+      }}
+    >
+      <SelectDay />
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
         }}
-        onChange={handleDateChange}
-      />
+      >
+        <TextField
+          id='date'
+          type='date'
+          defaultValue={getFormattedDate(currentDate)}
+          InputLabelProps={{
+            shrink: true,
+          }}
+          onChange={handleDateChange}
+          sx={{
+            marginTop: '10px',
+          }}
+        />
+      </Box>
 
       <Typography>שעה:</Typography>
       <TextField

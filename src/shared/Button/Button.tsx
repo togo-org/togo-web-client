@@ -11,6 +11,7 @@ const Button = ({
   onClick,
   sx: customSx,
   href,
+  children,
 }: ButtonProps) => {
   const styles = useStyles({ variant, color, size, shape });
 
@@ -36,6 +37,7 @@ const Button = ({
       onClick={onClick}
     >
       <Typography sx={styles.typography}>{label}</Typography>
+      {children}
     </MuiButton>
   );
 };

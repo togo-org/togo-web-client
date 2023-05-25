@@ -1,6 +1,6 @@
-import IMAGES from '@/utils/constants/IMAGES';
 
 import { EventInterface } from '@/types';
+import IMAGES from '@/utils/constants/IMAGES';
 
 // get coordinates from: https://www.latlong.net/convert-address-to-lat-long.html
 
@@ -11,7 +11,7 @@ const mockData: EventInterface[] = [
     category: 'restaurant',
     address: 'אריה שנקר 7',
     city: 'הרצליה',
-    image: IMAGES.CardRestaurant, // TODO: check if need to be `${IMAGES.CardRestaurant}`,
+    image: IMAGES.CardRestaurant.src, // TODO: check if need to be `${IMAGES.CardRestaurant}`,
     tags: ['אוכל אסייאתי', 'nature'],
     link: 'https://zozobra.co.il/',
     coordinates: {
@@ -25,7 +25,7 @@ const mockData: EventInterface[] = [
     category: 'restaurant',
     address: 'הדולפין 1',
     city: 'יפו',
-    image: IMAGES.CardRestaurant,
+    image: IMAGES.CardRestaurant.src,
     tags: ['חומוס', 'אוכל ערבי'],
     link: 'https://www.hashulchan.co.il/restaurant/%D7%90%D7%91%D7%95-%D7%97%D7%A1%D7%9F-%D7%94%D7%93%D7%95%D7%9C%D7%A4%D7%99%D7%9F/',
     coordinates: {
@@ -39,7 +39,7 @@ const mockData: EventInterface[] = [
     category: 'restaurant',
     address: 'מתחם G',
     city: 'כפר סבא',
-    image: IMAGES.CardRestaurant,
+    image: IMAGES.CardRestaurant.src,
     tags: ['בשרי', 'אוכל מזרחי'],
     link: 'https://beer-garden.co.il/kfar-saba/',
     coordinates: {
@@ -53,7 +53,7 @@ const mockData: EventInterface[] = [
     category: 'attraction',
     address: `שד' ישראל רוקח, גני התערוכה`,
     city: 'תל אביב',
-    image: IMAGES.CardAttraction,
+    image: IMAGES.CardAttraction.src,
     tags: ['בשרי', 'אוכל מזרחי'],
     link: 'https://www.lunapark.co.il/',
     coordinates: {
@@ -67,7 +67,7 @@ const mockData: EventInterface[] = [
     category: 'attraction',
     address: 'שדרות מרילנד 5',
     city: 'ראשון לציון',
-    image: IMAGES.CardAttraction,
+    image: IMAGES.CardAttraction.src,
     tags: ['בשרי', 'אוכל מזרחי'],
     link: 'https://www.superland.co.il/',
     coordinates: {
@@ -81,7 +81,7 @@ const mockData: EventInterface[] = [
     category: 'attraction',
     address: '?',
     city: 'ירושלים',
-    image: IMAGES.CardAttraction,
+    image: IMAGES.CardAttraction.src,
     tags: ['טבע', 'על האש'],
     link: 'https://www.jda.gov.il/%D7%92%D7%9F-%D7%A1%D7%90%D7%A7%D7%A8/',
     coordinates: {
@@ -95,7 +95,7 @@ const mockData: EventInterface[] = [
     category: 'trip',
     address: '?',
     city: 'תל אביב',
-    image: IMAGES.CardTrip,
+    image: IMAGES.CardTrip.src,
     tags: ['טבע', 'על האש'],
     link: 'https://www.yarkon-river.org.il/',
     coordinates: {
@@ -109,7 +109,7 @@ const mockData: EventInterface[] = [
     category: 'trip',
     address: 'מצפה רמון',
     city: 'נגב',
-    image: IMAGES.CardTrip,
+    image: IMAGES.CardTrip.src,
     tags: ['טבע', 'מדבר'],
     link: 'https://mitzpe-ramon.muni.il/',
     coordinates: {
@@ -123,14 +123,28 @@ const mockData: EventInterface[] = [
     category: 'trip',
     address: `אגודת ספורט בית"ר 1`,
     city: 'ירושלים',
-    image: IMAGES.CardTrip,
+    image: IMAGES.CardTrip.src,
     tags: ['טבע', 'על האש'],
     link: 'https://www.beitarfc.co.il/%D7%90%D7%99%D7%A6%D7%98%D7%93%D7%99%D7%95%D7%9F-%D7%98%D7%93%D7%99/',
+    coordinates: {
+      latitude: 31.778860,
+      longitude: 35.203070
+    }
+  },
+  {
+    id: 10,
+    name: 'גן יפו',
+    category: 'restaurant',
+    address: 'ירושליים',
+    city: 'ירושלים',
+    image: IMAGES.CardAttraction.src,
+    tags: ['בשרי', 'אוכל מזרחי'],
     coordinates: {
       latitude: 32.166,
       longitude: 34.843,
     },
-  },
+  }
 ];
+  
 
 export default mockData;

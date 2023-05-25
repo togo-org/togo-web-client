@@ -1,8 +1,9 @@
 const useStyles = () => {
   return {
-    icon: {
-      alignSelf: 'flex-start',
+    root: {
+      fontSize: '1.2rem',
     },
   };
 };
+
 export default useStyles;

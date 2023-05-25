@@ -8,14 +8,15 @@ const useStyles = () => {
     root: {
       display: 'flex',
       flexDirection: 'column',
+      flex: 'none',
       color: colors.grey.black,
       backgroundColor: colors.grey.white,
       fontFamily: 'rubik',
       fontSize: '1.16rem',
       borderRadius: '15px',
-      width: 'fit-content',
-      height: '300px',
-      gap: '10px',
+      width: '50%',
+      height: '100%',
+      gap: '1px',
     },
     chipContainer: {
       display: 'flex',
@@ -23,11 +24,15 @@ const useStyles = () => {
       alignItems: 'baseline',
       gap: '3px',
       padding: '3px',
+     
+
     },
     h2: {
+      textAlign:'center',
+      width: '100%',
       color: colors.grey.black,
       fontWeight: 'bold',
-      width: 'fit-content',
+     
       fontSize: '1.125rem',
     },
     cardFooterHead: {

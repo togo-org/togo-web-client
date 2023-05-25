@@ -16,6 +16,11 @@ export const userSearchDataState = atom({
   } as UserSearchDataInterface,
 }) as RecoilState<UserSearchDataInterface>;
 
+export const currentDateState = atom({
+  key: 'currentDateState',
+  default: new Date(),
+}) as RecoilState<Date>;
+
 export const currentSelectEventTabState = atom({
   key: 'currentSelectEventTabState',
   default: 0,
@@ -33,3 +38,9 @@ export const userLocationState = atom({
     lng: 0,
   },
 }) as RecoilState<{ lat: number; lng: number }>;
+
+export const isMenuOpenState = atom({
+  key: 'isMenuOpenState',
+  default: false,
+
+}) as RecoilState<boolean>;

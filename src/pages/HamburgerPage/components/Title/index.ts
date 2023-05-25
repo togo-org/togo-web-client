@@ -1,3 +1,3 @@
-import Title from '@/pages/HamburgerPage/components/TitlesContainer/TitlesContainer'
+import Title from '@/pages/HamburgerPage/components/Title/Title'
 
 export default Title
