@@ -15,7 +15,7 @@ const useStyles = () => {
       fontSize: '1.16rem',
       borderRadius: '15px',
       width: '50%',
-      height: 'fit-content',
+      height: '100%',
       gap: '1px',
     },
     chipContainer: {
@@ -28,9 +28,11 @@ const useStyles = () => {
 
     },
     h2: {
+      textAlign:'center',
+      width: '100%',
       color: colors.grey.black,
       fontWeight: 'bold',
-      width: 'fit-content',
+     
       fontSize: '1.125rem',
     },
     cardFooterHead: {

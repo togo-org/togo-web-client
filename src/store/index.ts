@@ -38,3 +38,9 @@ export const userLocationState = atom({
     lng: 0,
   },
 }) as RecoilState<{ lat: number; lng: number }>;
+
+export const isMenuOpenState = atom({
+  key: 'isMenuOpenState',
+  default: false,
+
+}) as RecoilState<boolean>;
