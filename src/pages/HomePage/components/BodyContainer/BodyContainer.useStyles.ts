@@ -3,8 +3,8 @@ const useStyles = () => {
     root: {
       display: 'flex',
       flexDirection: 'column',
-      gap: '2rem',
-      border: '1px solid red',
+      gap: '2.5rem',
+     
     },
   };
 };

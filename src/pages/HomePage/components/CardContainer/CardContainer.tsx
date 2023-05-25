@@ -45,9 +45,12 @@ const CardContainer = ({ type }: CardContainerProps) => {
           console.log(getDataByCategory('restaurant'));
 
           return (
-            <Card key={item.id} event={item}  />
+       
+            
+            <Card key={item.id} event={item} />
+            
           );
-        })}
+           } )}
       </Box>
     </Box>
   );
