@@ -1,7 +1,7 @@
 import FineEventButton from '@/pages/SelectEvent/When/components/FineEventButton';
 import SelectDay from '@/pages/SelectEvent/When/components/SelectDay';
 import { userSearchDataState } from '@/store';
-import { Box, TextField, Typography } from '@mui/material';
+import { Box, TextField } from '@mui/material';
 import React, { useState } from 'react';
 import { useRecoilState } from 'recoil';
 
