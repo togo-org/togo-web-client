@@ -14,20 +14,24 @@ const useStyles = () => {
 
     notSelected: {
       backgroundColor: grey.white,
-      color: theme.palette.primary.main,
+      color: theme.palette.secondary.dark,
       width: '80px',
       height: '40px',
       '&:hover': {
         backgroundColor: grey.white,
-        color: theme.palette.primary.main,
+        color: theme.palette.secondary.dark,
       },
     },
 
     selected: {
-      backgroundColor: theme.palette.primary.main,
+      backgroundColor: theme.palette.secondary.dark,
       color: grey.white,
       width: 'fit-content',
       height: '60px',
+      '&:hover': {
+        backgroundColor: theme.palette.secondary.dark,
+        color: grey.white,
+      },
     },
   };
 };
