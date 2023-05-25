@@ -1,7 +1,7 @@
 import FineEventButton from '@/pages/SelectEvent/When/components/FineEventButton';
 import SelectDay from '@/pages/SelectEvent/When/components/SelectDay';
 import { userSearchDataState } from '@/store';
-import { Box, TextField, Typography } from '@mui/material';
+import { Box, TextField } from '@mui/material';
 import React, { useState } from 'react';
 import { useRecoilState } from 'recoil';
 
@@ -60,6 +60,7 @@ const When = () => {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
+          gap: '10px',
         }}
       >
         <TextField
@@ -74,21 +75,20 @@ const When = () => {
             marginTop: '10px',
           }}
         />
+        <TextField
+          id='time'
+          type='time'
+          defaultValue={getFormattedTime(currentDate)}
+          InputLabelProps={{
+            shrink: true,
+          }}
+          inputProps={{
+            step: 300, // 5 min
+          }}
+          onChange={handleTimeChange}
+        />
       </Box>
 
-      <Typography>שעה:</Typography>
-      <TextField
-        id='time'
-        type='time'
-        defaultValue={getFormattedTime(currentDate)}
-        InputLabelProps={{
-          shrink: true,
-        }}
-        inputProps={{
-          step: 300, // 5 min
-        }}
-        onChange={handleTimeChange}
-      />
       <FineEventButton />
     </Box>
   );

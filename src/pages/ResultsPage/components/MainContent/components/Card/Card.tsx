@@ -15,6 +15,7 @@ const Card = ({ event }: CardProps) => {
   const distance = useGetDistanceBetweenUserAndEvent(event);
   const { name, address, image, city, link } = event;
 
+
   return (
     <CardContainer>
       <CardContentContainer>
