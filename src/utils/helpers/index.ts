@@ -1,6 +1,7 @@
 import { palettes } from '@/theme/palettes';
 import { Category, EventInterface } from '@/types';
 import { THEMES_NAMES } from '@/utils/constants';
+import DateHelpers from '@/utils/helpers/DateHelpers';
 
 export const getDesignTokens = (mode: (typeof THEMES_NAMES)[number]) => {
   if (palettes[mode]) {
@@ -77,3 +78,5 @@ export const getDistanceBetweenTwoCoordinates = (
 
   return distance;
 };
+
+export { DateHelpers };
