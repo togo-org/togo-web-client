@@ -60,6 +60,7 @@ const When = () => {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
+          gap: '20px',
         }}
       >
         <TextField
@@ -74,21 +75,21 @@ const When = () => {
             marginTop: '10px',
           }}
         />
+
+        <TextField
+          id='time'
+          type='time'
+          defaultValue={getFormattedTime(currentDate)}
+          InputLabelProps={{
+            shrink: true,
+          }}
+          inputProps={{
+            step: 300, // 5 min
+          }}
+          onChange={handleTimeChange}
+        />
       </Box>
 
-      <Typography>שעה:</Typography>
-      <TextField
-        id='time'
-        type='time'
-        defaultValue={getFormattedTime(currentDate)}
-        InputLabelProps={{
-          shrink: true,
-        }}
-        inputProps={{
-          step: 300, // 5 min
-        }}
-        onChange={handleTimeChange}
-      />
       <FineEventButton />
     </Box>
   );
