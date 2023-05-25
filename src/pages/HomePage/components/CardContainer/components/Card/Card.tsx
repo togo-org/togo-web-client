@@ -4,6 +4,7 @@ import { useGetDistanceBetweenUserAndEvent } from '@/utils/hooks';
 import { Box, Card as MuiCard, Typography } from '@mui/material';
 import Image from 'next/image';
 import { EventInterface } from '@/types';
+import Link from 'next/link';
 
 const getRoundToSingleDecimalPlace = (num: number): number => {
   return Number(num.toFixed(1));
@@ -21,7 +22,7 @@ interface CardProps {
 
 const Card = ({ event }: CardProps) => {
   const distance = useGetDistanceBetweenUserAndEvent(event);
-  const { name, address, city, image, tags } = event; // TODO: handle link
+  const { name, address, city, image, tags,link } = event; // TODO: handle link
   const styles = useStyles();
   console.log(distance, 'print this');
 
@@ -34,8 +35,9 @@ const Card = ({ event }: CardProps) => {
       </Box>
       <Box sx={styles.cardFooterHead}>
         <Typography variant='h6' sx={styles.h2}>
-          {name}
+          <Link href={{pathname:link}}> {name}</Link>
         </Typography>
+       
       </Box>
       <Box sx={styles.cardFooterBody}>
         <Typography component='p' sx={styles.pBold}>
