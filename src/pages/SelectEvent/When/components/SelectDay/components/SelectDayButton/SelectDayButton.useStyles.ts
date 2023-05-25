@@ -9,19 +9,25 @@ const useStyles = () => {
       fontFamily: 'Rubik',
       borderRadius: '10px',
       padding: '10px 20px',
+      flex: 'none',
     },
 
     notSelected: {
       backgroundColor: grey.white,
       color: theme.palette.primary.main,
+      width: '80px',
+      height: '40px',
+      '&:hover': {
+        backgroundColor: grey.white,
+        color: theme.palette.primary.main,
+      },
     },
 
     selected: {
       backgroundColor: theme.palette.primary.main,
       color: grey.white,
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
+      width: 'fit-content',
+      height: '60px',
     },
   };
 };

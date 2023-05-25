@@ -16,6 +16,11 @@ export const userSearchDataState = atom({
   } as UserSearchDataInterface,
 }) as RecoilState<UserSearchDataInterface>;
 
+export const currentDateState = atom({
+  key: 'currentDateState',
+  default: new Date(),
+}) as RecoilState<Date>;
+
 export const currentSelectEventTabState = atom({
   key: 'currentSelectEventTabState',
   default: 0,
