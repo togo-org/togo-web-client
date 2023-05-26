@@ -11,7 +11,6 @@ const useStyles = () => {
             background: 'transparent',
             color: colors.grey.black,
             textAlign: 'center',
-            border: '1px solid black',
             gap: '10px'
         },
         icon: {

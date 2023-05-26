@@ -8,7 +8,6 @@ const useStyles = () => {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            border: '2px solid black',
         }
     }
 }
