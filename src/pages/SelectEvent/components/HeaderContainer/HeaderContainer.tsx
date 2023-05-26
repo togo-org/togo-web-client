@@ -1,6 +1,9 @@
 import TabTitle from '@/pages/SelectEvent/components/TabTitle';
+import Icon from '@/shared/Icon';
+import ICONS from '@/utils/constants/ICONS';
 import SELECT_EVENT_TABS from '@/utils/constants/SELECT_EVENT_TABS';
 import { Box } from '@mui/material';
+import { useRouter } from 'next/router';
 import React from 'react';
 
 interface HeaderContainerProps {
@@ -9,6 +12,12 @@ interface HeaderContainerProps {
 }
 
 const HeaderContainer = ({ children, selectedTab }: HeaderContainerProps) => {
+  const router = useRouter();
+
+  const handleHomeClick = () => {
+    router.push('/');
+  };
+
   const getFormatedLabel = (tab: string) => {
     switch (tab) {
       case SELECT_EVENT_TABS.WHAT:
@@ -25,7 +34,6 @@ const HeaderContainer = ({ children, selectedTab }: HeaderContainerProps) => {
   return (
     <Box
       sx={{
-        position: 'relative',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',
@@ -35,6 +43,17 @@ const HeaderContainer = ({ children, selectedTab }: HeaderContainerProps) => {
         gap: '20px',
       }}
     >
+      <Box
+        sx={{
+          position: 'absolute',
+          top: '10px',
+          right: '10px',
+        }}
+        onClick={handleHomeClick}
+      >
+        <Icon src={ICONS.Close} alt='home' size='l' />
+      </Box>
+
       {children}
       <TabTitle label={getFormatedLabel(selectedTab)} />
     </Box>
