@@ -51,7 +51,7 @@ const HeaderContainer = ({ children, selectedTab }: HeaderContainerProps) => {
         }}
         onClick={handleHomeClick}
       >
-        <Icon src={ICONS.Home} alt='home' size='l' />
+        <Icon src={ICONS.Close} alt='home' size='l' />
       </Box>
 
       {children}
