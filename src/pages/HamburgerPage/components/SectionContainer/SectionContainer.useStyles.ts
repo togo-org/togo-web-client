@@ -6,6 +6,7 @@ const useStyles = () => {
             flexDirection: 'column',
             justifyContent: 'center',
             alignItems: 'center',
+            gap: '4px'
         },
 
     };
