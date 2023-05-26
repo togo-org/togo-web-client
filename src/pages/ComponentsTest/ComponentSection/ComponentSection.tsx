@@ -2,6 +2,7 @@ import useStyles from '@/pages/ComponentsTest/ComponentSection/ComponentSection.
 import { Box, Typography } from '@mui/material';
 import React from 'react';
 
+
 interface ComponentSectionProps {
 	title: string;
 	description: string;
