@@ -5,12 +5,12 @@ import ButtonsSection from '@/pages/ComponentsTest/sections/ButtonsSection';
 import ChipsSection from '@/pages/ComponentsTest/sections/ChipsSection';
 import IconsSection from '@/pages/ComponentsTest/sections/IconsSection';
 import React from 'react';
+import SvgSection from './sections/SvgSection/SvgSection';
 
 const ComponentsTest = () => {
   return (
     <PageContainer>
       <Header />
-   
 
       <ComponentSection
         title='Buttons'
@@ -27,6 +27,11 @@ const ComponentsTest = () => {
         title='Icons'
         description='All the icons in the app with all the states and variations'
         componentsCountainer={<IconsSection />}
+      />
+      <ComponentSection
+        title='Svg'
+        description='All the svgs in the app with all the states and variations'
+        componentsCountainer={<SvgSection />}
       />
     </PageContainer>
   );

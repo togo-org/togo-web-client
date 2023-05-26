@@ -1,3 +1,4 @@
+import { SxProps } from '@mui/material';
 import { StaticImageData } from 'next/image';
 
 export type CustomPaletteModeState = 'light' | 'dark' | 'mystical';
@@ -25,4 +26,20 @@ export interface EventInterface {
     latitude: number;
     longitude: number;
   };
+}
+
+export interface SvgProps {
+  color?:
+    | 'secondary'
+    | 'disabled'
+    | 'action'
+    | 'inherit'
+    | 'primary'
+    | 'error'
+    | 'info'
+    | 'success'
+    | 'warning';
+  d?: string;
+  fontSize: 'inherit' | 'small' | 'large' | 'medium';
+  sx?: SxProps;
 }
