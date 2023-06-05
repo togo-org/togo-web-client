@@ -44,5 +44,4 @@ export interface SvgProps {
   sx?: SxProps;
 }
 
-
-export type SelectEventTabLabels = 'what' | 'how-much' | 'when';  
+export type SelectEventTabLabels = 'what' | 'how-much' | 'when';

@@ -3,7 +3,7 @@ import lightTheme from '@/theme/palettes/light';
 import mysticalTheme from '@/theme/palettes/mystical';
 
 export const palettes = {
-	darkTheme,
-	lightTheme,
-	mysticalTheme,
+  darkTheme,
+  lightTheme,
+  mysticalTheme,
 };

@@ -2,10 +2,10 @@
 
 import Button from '@/features/shared/Button';
 import { currentSelectEventTabState } from '@/store';
+import { useRouter } from 'next/navigation';
 import React from 'react';
 import { useSetRecoilState } from 'recoil';
 import useStyles from './ContinueButton.useStyles';
-import { useRouter } from 'next/navigation';
 
 const ContinueButton = () => {
   const router = useRouter();
