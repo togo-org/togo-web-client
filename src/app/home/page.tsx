@@ -12,6 +12,7 @@ import HeroContainer from './_features/HeroContainer';
 
 const HomePage = () => {
   const isMenuOpen = useRecoilValue<boolean>(isMenuOpenState);
+
   return isMenuOpen ? (
     <HamburgerMenu />
   ) : (
