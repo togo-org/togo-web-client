@@ -1,3 +1,3 @@
-import PageContainer from "@/pages/ComponentsTest/PageContainer/PageContainer";
+import PageContainer from './PageContainer';
 
 export default PageContainer;

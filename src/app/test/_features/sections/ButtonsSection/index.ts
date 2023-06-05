@@ -1,3 +1,3 @@
-import ButtonsSection from "@/pages/ComponentsTest/sections/ButtonsSection/ButtonsSection";
+import ButtonsSection from './ButtonsSection';
 
 export default ButtonsSection;

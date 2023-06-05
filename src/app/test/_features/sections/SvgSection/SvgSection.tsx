@@ -1,3 +1,5 @@
+'use client';
+
 import HomeIcon from '@/features/shared/SvgIcons/HomeIcon/HomeIcon';
 import { Box } from '@mui/material';
 import useStyles from './SvgSection.useStyles';

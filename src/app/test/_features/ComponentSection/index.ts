@@ -1,3 +1,3 @@
-import ComponentSection from '@/pages/ComponentsTest/ComponentSection/ComponentSection';
+import ComponentSection from './ComponentSection';
 
 export default ComponentSection;

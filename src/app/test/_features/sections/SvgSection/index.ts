@@ -1,3 +1,3 @@
-import Svg from "@/shared/Svg";
+import Svg from '@/features/shared/Svg';
 
 export default Svg;

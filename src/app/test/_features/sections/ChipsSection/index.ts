@@ -1,3 +1,3 @@
-import ChipsSection from '@/pages/ComponentsTest/sections/ChipsSection/ChipsSection';
+import ChipsSection from './ChipsSection';
 
 export default ChipsSection;

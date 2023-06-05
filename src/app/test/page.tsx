@@ -1,11 +1,13 @@
-import ComponentSection from '@/pages/ComponentsTest/ComponentSection';
-import Header from '@/pages/ComponentsTest/Header';
-import PageContainer from '@/pages/ComponentsTest/PageContainer';
-import ButtonsSection from '@/pages/ComponentsTest/sections/ButtonsSection';
-import ChipsSection from '@/pages/ComponentsTest/sections/ChipsSection';
-import IconsSection from '@/pages/ComponentsTest/sections/IconsSection';
+'use client';
+
 import React from 'react';
-import SvgSection from './sections/SvgSection/SvgSection';
+import ComponentSection from './_features/ComponentSection';
+import Header from './_features/Header';
+import PageContainer from './_features/PageContainer';
+import ButtonsSection from './_features/sections/ButtonsSection';
+import ChipsSection from './_features/sections/ChipsSection';
+import IconsSection from './_features/sections/IconsSection';
+import SvgSection from './_features/sections/SvgSection';
 
 const ComponentsTest = () => {
   return (
@@ -31,7 +33,7 @@ const ComponentsTest = () => {
       <ComponentSection
         title='Svg'
         description='All the svgs in the app with all the states and variations'
-        componentsCountainer={<SvgSection />}
+        componentsCountainer={<SvgSection fontSize='small' />}
       />
     </PageContainer>
   );

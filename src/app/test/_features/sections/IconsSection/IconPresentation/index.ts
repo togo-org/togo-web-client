@@ -1,3 +1,3 @@
-import IconPresentation from '@/pages/ComponentsTest/sections/IconsSection/IconPresentation/IconPresentation';
+import IconPresentation from './IconPresentation';
 
 export default IconPresentation;

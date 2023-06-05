@@ -1,3 +1,3 @@
-import Header from '@/pages/ComponentsTest/Header/Header';
+import Header from './Header';
 
 export default Header;

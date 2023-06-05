@@ -1,3 +1,3 @@
-import IconsSection from '@/pages/ComponentsTest/sections/IconsSection/IconsSection';
+import IconsSection from './IconsSection';
 
 export default IconsSection;
