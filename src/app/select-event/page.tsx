@@ -1,9 +1,5 @@
 const SelectEventPage = () => {
-  return (
-    <div>
-      <h1>Select Event Page</h1>
-    </div>
-  );
+  return <div />;
 };
 
 export default SelectEventPage;

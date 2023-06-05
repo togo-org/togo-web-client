@@ -5,7 +5,7 @@ import Icon from '@/features/shared/Icon';
 import ICONS from '@/utils/constants/ICONS';
 // import SELECT_EVENT_TABS from '@/utils/constants/SELECT_EVENT_TABS';
 import { Box } from '@mui/material';
-// import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import React from 'react';
 
 interface HeaderContainerProps {
@@ -13,11 +13,11 @@ interface HeaderContainerProps {
 }
 
 const HeaderContainer = ({ children }: HeaderContainerProps) => {
-  // const router = useRouter();
+  const router = useRouter();
 
-  // const handleHomeClick = () => {
-  //   router.push('/');
-  // };
+  const handleCloseClick = () => {
+    router.push('/home');
+  };
 
   // const getFormatedLabel = (tab: string) => {
   //   switch (tab) {
@@ -50,9 +50,9 @@ const HeaderContainer = ({ children }: HeaderContainerProps) => {
           top: '10px',
           right: '10px',
         }}
-        // onClick={handleHomeClick}
+        onClick={handleCloseClick}
       >
-        <Icon src={ICONS.Close} alt='home' size='l' />
+        <Icon src={ICONS.Close} alt='close' size='l' />
       </Box>
 
       {children}

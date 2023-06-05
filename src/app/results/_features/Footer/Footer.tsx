@@ -1,6 +1,8 @@
-import FooterContainer from '@/pages/ResultsPage/components/Footer/components/FooterContainer/FooterContainer';
-import NotFindResultsLabel from '@/pages/ResultsPage/components/Footer/components/NotFindResultsLabel';
-import RefreshButton from '@/pages/ResultsPage/components/Footer/components/RefreshButton';
+'use client';
+
+import FooterContainer from './_features/FooterContainer';
+import NotFindResultsLabel from './_features/NotFindResultsLabel';
+import RefreshButton from './_features/RefreshButton';
 
 const Footer = () => {
   return (

@@ -1,8 +1,10 @@
-import BackButton from '@/pages/ResultsPage/components/Header/components/BackButton';
-import HeaderContainer from '@/pages/ResultsPage/components/Header/components/HeaderContainer';
-import Tabs from '@/pages/ResultsPage/components/Header/components/Tabs';
-import Title from '@/pages/ResultsPage/components/Header/components/Title';
+'use client';
+
 import { Box } from '@mui/material';
+import BackButton from './_features/BackButton';
+import HeaderContainer from './_features/HeaderContainer';
+import Tabs from './_features/Tabs';
+import Title from './_features/Title';
 
 const Header = () => {
   return (

@@ -4,16 +4,16 @@
 
 import Button from '@/features/shared/Button';
 import { useUpdateResults } from '@/utils/hooks';
-// import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import useStyles from './FineEventButton.useStyles';
 
 const FineEventButton = () => {
   const styles = useStyles();
-  // const router = useRouter();
+  const router = useRouter();
   const updateResults = useUpdateResults();
 
   const handleClick = () => {
-    // router.push('/ResultsPage');
+    router.push('/results');
     updateResults();
   };
 

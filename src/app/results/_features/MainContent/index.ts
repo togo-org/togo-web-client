@@ -1,3 +1,3 @@
-import MainContent from '@/pages/ResultsPage/components/MainContent/MainContent';
+import MainContent from './MainContent';
 
 export default MainContent;

@@ -1,7 +1,7 @@
-import Footer from '@/pages/ResultsPage/components/Footer';
-import Header from '@/pages/ResultsPage/components/Header';
-import MainContent from '@/pages/ResultsPage/components/MainContent';
-import PageWrapper from '@/pages/ResultsPage/components/PageWrapper';
+import Footer from './_features/Footer';
+import Header from './_features/Header';
+import MainContent from './_features/MainContent';
+import PageWrapper from './_features/PageWrapper';
 
 const ResultsPage = () => {
   return (

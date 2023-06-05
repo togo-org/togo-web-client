@@ -18,7 +18,7 @@ const HeroContainer = () => {
   const router = useRouter();
 
   function handleClick() {
-    router.push('/select-event');
+    router.push('/select-event/what');
   }
   return (
     <Box sx={styles.root}>

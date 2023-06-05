@@ -1,3 +1,3 @@
-import Footer from '@/pages/ResultsPage/components/Footer/Footer';
+import Footer from './Footer';
 
 export default Footer;

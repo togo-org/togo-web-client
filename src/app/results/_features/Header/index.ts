@@ -1,3 +1,3 @@
-import Header from '@/pages/ResultsPage/components/Header/Header';
+import Header from './Header';
 
 export default Header;

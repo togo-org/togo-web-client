@@ -1,3 +1,3 @@
-import PageWrapper from '@/pages/ResultsPage/components/PageWrapper/PageWrapper';
+import PageWrapper from './PageWrapper';
 
 export default PageWrapper;

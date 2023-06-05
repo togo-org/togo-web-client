@@ -1,4 +1,6 @@
-import BgImage from '@/shared/BgImage';
+'use client';
+
+import BgImage from '@/features/shared/BgImage';
 import IMAGES from '@/utils/constants/IMAGES';
 import { Box } from '@mui/material';
 import React from 'react';

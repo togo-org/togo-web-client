@@ -1,8 +1,9 @@
-import Card from '@/pages/ResultsPage/components/MainContent/components/Card';
-import MainContainer from '@/pages/ResultsPage/components/MainContent/components/MainContainer';
-import { eventsResultsState } from '@/store';
+'use client';
 
+import { eventsResultsState } from '@/store';
 import { useRecoilValue } from 'recoil';
+import Card from './_features/Card';
+import MainContainer from './_features/MainContainer';
 
 const MainContent = () => {
   const eventsResults = useRecoilValue(eventsResultsState);
