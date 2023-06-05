@@ -7,9 +7,9 @@ const FooterDots = () => {
   const selectedTab = useRecoilValue(currentSelectEventTabState);
   return (
     <DotsContainer>
-      <Dot isFilled={selectedTab === 0} />
-      <Dot isFilled={selectedTab === 1} />
-      <Dot isFilled={selectedTab === 2} />
+      <Dot isFilled={selectedTab === 'what'} />
+      <Dot isFilled={selectedTab === 'how-much'} />
+      <Dot isFilled={selectedTab === 'when'} />
     </DotsContainer>
   );
 };
