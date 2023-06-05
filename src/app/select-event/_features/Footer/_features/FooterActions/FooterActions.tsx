@@ -10,11 +10,11 @@ import useCurrTabName from './useCurrTabName';
 const FooterActions = () => {
   const route = useRouter();
   const currTabName = useCurrTabName();
-  const [currentTabName, setCurrentTabName] = useState<string>(currTabName);
+  const setCurrentTabName = useState<string>(currTabName)[1];
 
   useEffect(() => {
     setCurrentTabName(currTabName);
-  }, [currTabName]);
+  }, [currTabName, setCurrentTabName]);
 
   const getNextTabName = () => {
     switch (currTabName) {
