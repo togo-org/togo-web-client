@@ -1,31 +1,55 @@
-import { currentSelectEventTabState } from '@/store';
+'use client';
+
 import ICONS from '@/utils/constants/ICONS';
-import SELECT_EVENT_TABS from '@/utils/constants/SELECT_EVENT_TABS';
-import { useRecoilState } from 'recoil';
+import { useRouter } from 'next/navigation';
+import { useEffect, useState } from 'react';
 import ActionsContainer from './_features/ActionsContainer';
 import ArrowButton from './_features/ArrowButton';
+import useCurrTabName from './useCurrTabName';
 
 const FooterActions = () => {
-  const [selectedTab, setSelectedTab] = useRecoilState(
-    currentSelectEventTabState
-  );
+  const route = useRouter();
+  const currTabName = useCurrTabName();
+  const [currentTabName, setCurrentTabName] = useState<string>(currTabName);
 
-  const handleBackClick = () => {
-    const tabsAmount = Object.keys(SELECT_EVENT_TABS).length;
-    if (selectedTab === 0) {
-      setSelectedTab(tabsAmount - 1);
-    } else {
-      setSelectedTab(selectedTab - 1);
+  useEffect(() => {
+    setCurrentTabName(currTabName);
+  }, [currTabName]);
+
+  const getNextTabName = () => {
+    switch (currTabName) {
+      case 'what':
+        return 'how-much';
+      case 'how-much':
+        return 'when';
+      case 'when':
+        return 'what';
+      default:
+        return 'what';
     }
   };
 
-  const handleNextClick = () => {
-    const tabsAmount = Object.keys(SELECT_EVENT_TABS).length;
-    if (selectedTab === tabsAmount - 1) {
-      setSelectedTab(0);
-    } else {
-      setSelectedTab(selectedTab + 1);
+  const getBackTabName = () => {
+    switch (currTabName) {
+      case 'what':
+        return 'when';
+      case 'how-much':
+        return 'what';
+      case 'when':
+        return 'how-much';
+      default:
+        return 'what';
     }
+  };
+
+  const handleBackClick = () => {
+    const backTabName = getBackTabName();
+    route.push(`/select-event/${backTabName}`);
+  };
+
+  const handleNextClick = () => {
+    const nextTabName = getNextTabName();
+    route.push(`/select-event/${nextTabName}`);
   };
 
   return (
