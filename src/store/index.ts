@@ -1,4 +1,8 @@
-import { EventInterface, UserSearchDataInterface } from '@/types';
+import {
+  EventInterface,
+  SelectEventTabLabels,
+  UserSearchDataInterface,
+} from '@/types';
 import { THEMES_NAMES } from '@/utils/constants';
 import { RecoilState, atom } from 'recoil';
 
@@ -23,8 +27,8 @@ export const currentDateState = atom({
 
 export const currentSelectEventTabState = atom({
   key: 'currentSelectEventTabState',
-  default: 0,
-}) as RecoilState<number>;
+  default: 'what',
+}) as RecoilState<SelectEventTabLabels>;
 
 export const eventsResultsState = atom({
   key: 'eventsResultsState',
@@ -42,5 +46,4 @@ export const userLocationState = atom({
 export const isMenuOpenState = atom({
   key: 'isMenuOpenState',
   default: false,
-
 }) as RecoilState<boolean>;

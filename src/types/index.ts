@@ -43,3 +43,5 @@ export interface SvgProps {
   fontSize: 'inherit' | 'small' | 'large' | 'medium';
   sx?: SxProps;
 }
+
+export type SelectEventTabLabels = 'what' | 'how-much' | 'when';
