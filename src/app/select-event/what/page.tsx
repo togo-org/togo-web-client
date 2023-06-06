@@ -3,9 +3,10 @@
 import EventTypeCard from '@/app/select-event/_features/EventTypeCard';
 import IMAGES from '@/utils/constants/IMAGES';
 import USER_EVENT_TYPES from '@/utils/constants/USER_EVENT_TYPES';
-import { Box } from '@mui/material';
+import { Box, useTheme } from '@mui/material';
 
 const What = () => {
+  const theme = useTheme();
   return (
     <Box
       sx={{
@@ -17,6 +18,9 @@ const What = () => {
         width: '100%',
         height: '100%',
         padding: '0 47px',
+        [theme.breakpoints.up('lg')]: {
+          flexDirection: 'row',
+        },
       }}
     >
       <EventTypeCard

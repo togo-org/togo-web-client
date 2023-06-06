@@ -13,7 +13,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' dir='rtl'>
-      <body className='-z-20 overflow-x-hidden bg-background'>
+      <body
+        style={{
+          height: '100vh',
+          width: '100vw',
+          overflow: 'hidden',
+          margin: '0',
+          padding: '0',
+          boxSizing: 'border-box',
+        }}
+      >
         <AppWrapper>{children}</AppWrapper>
       </body>
     </html>
