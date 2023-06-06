@@ -1,7 +1,4 @@
-import { useTheme } from '@mui/material';
-
 const useStyles = () => {
-  const theme = useTheme();
   return {
     root: {
       background: 'transparent',
@@ -11,10 +8,6 @@ const useStyles = () => {
       justifyContent: 'center',
       width: '100%',
       flexGrow: 1,
-      [theme.breakpoints.up('lg')]: {
-        flexDirection: 'row',
-        border: '1px solid #000000',
-      },
     },
   };
 };

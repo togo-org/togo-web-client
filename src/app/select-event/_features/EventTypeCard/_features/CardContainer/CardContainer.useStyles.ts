@@ -12,16 +12,15 @@ const useStyles = () => {
       position: 'relative',
       flex: 1,
       width: '100%',
-      [theme.breakpoints.up('md')]: {
-        width: '340px',
-        height: '76px',
-        border: 'soild 2px red',
+      [theme.breakpoints.up('lg')]: {
+        maxWidth: '340px',
+        height: '175px',
+        border: 'soild 200px blue',
         display: 'flex',
-        flexDirection: 'column',
+        flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
         position: 'relative',
-        flex: 1,
       },
     },
   };
